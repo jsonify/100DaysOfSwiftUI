@@ -10,10 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-//            LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom)
-//            RadialGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .bottomTrailing, startRadius: 20, endRadius: 1000)
-            AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center)
+        Button(action: {
+            print("Button was tapped")
+        }) {
+            HStack {
+                Image(systemName: "pencil")
+                    Text("Edit")
+            }
         }
     }
 }
