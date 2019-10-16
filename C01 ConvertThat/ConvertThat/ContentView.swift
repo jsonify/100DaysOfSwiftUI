@@ -10,11 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var unitInput = ""
-    @State private var m = 0.0
-    @State private var km = 0.0
-    @State private var ft = 0.0
-    @State private var yard = 0.0
-    @State private var mile = 0.0
+    @State private var m = 1.0
+    @State private var km = 1000.0
+    @State private var ft = 3.28084
+    @State private var yard = 1.093613
+    @State private var mile = 0.000621
     
     @State private var cm = 0
     @State private var mm = 0
@@ -23,22 +23,27 @@ struct ContentView: View {
     @State private var unitInputType = 0
     @State private var unitOutputType = 0
     
-    let unitInputTypes = ["Meters", "Km", "Ft", "Yards", "Miles"]
+    let unitInputTypes = ["Km", "Ft", "Yards", "Miles"]
+    
     let unitOutputTypes = ["Meters", "Km", "Ft", "Yards", "Miles"]
     
-//    func convertAmountMM(amount: ) {
-//        if(unitInputType == 0) {
-//            km = amount * 1000
-//            ft = amount * 3.28084
-//            yard = amount * 1.093613
-//            mile = amount * 0.000621
-//        }
-//    }
-    
-    var convertedAmount: Double {
-        let quantity = Double(unitInput)
-        return 0
+    var convertedOutputType: Double {
+        let amount = Double(unitInput) ?? 0
+        return amount
     }
+    
+    // take a quantity and convert it to a double
+    var convertedQuantity: Double {
+        return Double(unitInput) ?? 0
+    }
+    
+    /*
+     
+     take the current input segment and establish it as the base
+     take the current output segment and establish it as the multiplier
+     create a variable that is the base times multiplier
+     show variable output
+     */
     
     var body: some View {
         NavigationView {
@@ -64,7 +69,7 @@ struct ContentView: View {
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 Section(header: Text("Converted Length")) {
-                    Text("\(convertedAmount, specifier: "%.3f") units")
+                    Text("\(convertedQuantity, specifier: "%.3f") meters")
                 }
 
                 
