@@ -13,9 +13,6 @@
 		7976252223550AC900F6012F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7976252123550AC900F6012F /* Assets.xcassets */; };
 		7976252523550AC900F6012F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7976252423550AC900F6012F /* Preview Assets.xcassets */; };
 		7976252823550AC900F6012F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7976252623550AC900F6012F /* LaunchScreen.storyboard */; };
-		797625302356867700F6012F /* NamedUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7976252F2356867700F6012F /* NamedUnit.swift */; };
-		79762532235686C900F6012F /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79762531235686C900F6012F /* Length.swift */; };
-		79762534235686F800F6012F /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79762533235686F800F6012F /* UnitType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +24,6 @@
 		7976252423550AC900F6012F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7976252723550AC900F6012F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7976252923550AC900F6012F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7976252F2356867700F6012F /* NamedUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedUnit.swift; sourceTree = "<group>"; };
-		79762531235686C900F6012F /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
-		79762533235686F800F6012F /* UnitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +63,6 @@
 				7976252623550AC900F6012F /* LaunchScreen.storyboard */,
 				7976252923550AC900F6012F /* Info.plist */,
 				7976252323550AC900F6012F /* Preview Content */,
-				7976252F2356867700F6012F /* NamedUnit.swift */,
-				79762531235686C900F6012F /* Length.swift */,
-				79762533235686F800F6012F /* UnitType.swift */,
 			);
 			path = ConvertThat;
 			sourceTree = "<group>";
@@ -156,11 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7976251C23550AC700F6012F /* AppDelegate.swift in Sources */,
-				79762534235686F800F6012F /* UnitType.swift in Sources */,
 				7976251E23550AC700F6012F /* SceneDelegate.swift in Sources */,
-				79762532235686C900F6012F /* Length.swift in Sources */,
 				7976252023550AC700F6012F /* ContentView.swift in Sources */,
-				797625302356867700F6012F /* NamedUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
