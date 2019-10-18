@@ -9,17 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    var motto1: some View { Text("What the heck?") }
+    let motto2 = Text("Oh no she didn't")
     
     var body: some View {
         VStack {
-            Text("One")
-                .font(.largeTitle)
-            Text("two")
-            Text("three")
-            Text("four")
+            motto1
+            motto2
         }
-    .blur(radius: 5)
     }
 }
 
