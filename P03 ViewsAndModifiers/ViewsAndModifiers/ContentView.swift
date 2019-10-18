@@ -8,14 +8,26 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var motto1: some View { Text("What the heck?") }
-    let motto2 = Text("Oh no she didn't")
+struct CapsuleType: View {
+    var text: String
     
     var body: some View {
-        VStack {
-            motto1
-            motto2
+        Text(text)
+        .font(.largeTitle)
+        .padding()
+        .foregroundColor(.white)
+        .background(Color.blue)
+        .clipShape(Capsule())
+    }
+}
+
+struct ContentView: View {
+    
+    var body: some View {
+        VStack(spacing: 10) {
+            CapsuleType(text: "new")
+            
+            CapsuleType(text: "boom")
         }
     }
 }
