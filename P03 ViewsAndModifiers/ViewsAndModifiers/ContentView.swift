@@ -8,27 +8,49 @@
 
 import SwiftUI
 
-struct CapsuleType: View {
-    var text: String
-    
-    var body: some View {
-        Text(text)
-        .font(.largeTitle)
-        .padding()
-        .foregroundColor(.white)
-        .background(Color.blue)
-        .clipShape(Capsule())
+struct Title: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.blue)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 
-struct ContentView: View {
+extension View {
+    func typeStyle() -> some View {
+        self.modifier(Title())
+    }
     
-    var body: some View {
-        VStack(spacing: 10) {
-            CapsuleType(text: "new")
+    func waterMarked(with text: String) -> some View {
+        self.modifier(Watermark(text: text))
+    }
+}
+
+struct Watermark: ViewModifier {
+    var text: String
+    
+    func body(content: Content) -> some View {
+        ZStack(alignment: .bottomTrailing){
+            content
             
-            CapsuleType(text: "boom")
+            Text(text)
+                .font(.caption)
+                .foregroundColor(.white)
+                .padding(5)
+                .background(Color.black)
         }
+    }
+}
+
+
+struct ContentView: View {
+    var body: some View {
+        Color.blue
+            .frame(width: 300, height: 300)
+            .waterMarked(with: "Hacking with Swift")
     }
 }
 
