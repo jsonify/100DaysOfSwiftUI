@@ -15,59 +15,56 @@ struct ContentView: View {
     @State private var unitInputType = 3
     @State private var unitOutputType = 3
     
-    //An array defines the choices for the segmentedPicker
     var lengthUnits = ["mm", "cm", "m", "km", "inch", "feet", "yard", "mile"]
 
-    
-    //The calculated property below converts the input quantity & unit to mm and then to the desired conversion unit
     var convertedOutputType: Double {
         let startUnit = lengthUnits[unitInputType]
-        var startFactor: Double = 1
+        var startingMultiplier: Double = 1
         
         let endUnit = lengthUnits[unitOutputType]
-        var endFactor: Double = 1
+        var endingMultiplier: Double = 1
         
         switch startUnit {
         case "cm":
-            startFactor = 10
+            startingMultiplier = 10
         case "m":
-            startFactor = 100
+            startingMultiplier = 100
         case "km":
-            startFactor = 1000
+            startingMultiplier = 1000
         case "inch":
-            startFactor = 25.4
+            startingMultiplier = 25.4
         case "feet":
-            startFactor = 25.4 * 12
+            startingMultiplier = 25.4 * 12
         case "yard":
-            startFactor = 25.4 * 12 * 3
+            startingMultiplier = 25.4 * 12 * 3
         case "mile":
-            startFactor = 25.4 * 12 * 5280
+            startingMultiplier = 25.4 * 12 * 5280
         default:
-            startFactor = 1
+            startingMultiplier = 1
         }
         
-        let mmConversion = startFactor * Double(Double(unitInput) ?? 0)
+        let mmConversion = startingMultiplier * Double(Double(unitInput) ?? 0)
         
         switch endUnit {
         case "cm":
-            endFactor = 1/10
+            endingMultiplier = 1/10
         case "m":
-            endFactor = 1/100
+            endingMultiplier = 1/100
         case "km":
-            endFactor = 1/1000
+            endingMultiplier = 1/1000
         case "inch":
-            endFactor = 1/25.4
+            endingMultiplier = 1/25.4
         case "feet":
-            endFactor = 1/(25.4 * 12)
+            endingMultiplier = 1/(25.4 * 12)
         case "yard":
-            endFactor = 1/(25.4 * 12 * 3)
+            endingMultiplier = 1/(25.4 * 12 * 3)
         case "mile":
-            endFactor = 1/(25.4 * 12 * 5280)
+            endingMultiplier = 1/(25.4 * 12 * 5280)
         default:
-            endFactor = 1
+            endingMultiplier = 1
         }
         
-        return mmConversion * endFactor
+        return mmConversion * endingMultiplier
     }
 
     var body: some View {
@@ -97,7 +94,6 @@ struct ContentView: View {
                     Text("\(convertedOutputType, specifier: "%.5f")")
                 }
 
-                
             }
             .navigationBarTitle("Length Converter")
         }
