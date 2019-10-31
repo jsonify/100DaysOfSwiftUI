@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                // Challenge 1
+// Challenge 1
                 Section(header: Text("When do you want to wake up?")) {
 //                VStack(alignment: .leading, spacing: 0) {
 //                    Text("When do you want to wake up?")
@@ -41,25 +41,34 @@ struct ContentView: View {
 //                VStack(alignment: .leading, spacing: 0) {
 //                    Text("Daily coffee intake")
 //                        .font(.headline)
-                    Stepper(value: $coffeeAmount, in: 1...20) {
-                        if coffeeAmount == 1 {
-                            Text("1 cup")
-                        } else {
-                            Text("\(coffeeAmount) cups")
+// Challenge 2
+                    Picker(selection: $coffeeAmount, label: Text("Cups")) {
+                        ForEach(1...20, id: \.self) { quantity in
+                            Text("\(quantity)")
+//                    Stepper(value: $coffeeAmount, in: 1...20) {
+//                        if coffeeAmount == 1 {
+//                            Text("1 cup")
+//                        } else {
+//                            Text("\(coffeeAmount) cups")
+//                        }
+//                    }
+//                }
                         }
                     }
+                .pickerStyle(WheelPickerStyle())
                 }
-                .navigationBarTitle("BetterRest")
-                .navigationBarItems(trailing:
-                    Button(action: calculateBedtime) {
-                        Text("Calculate")
-                    }
-                )
+
                     .alert(isPresented: $showingAlert) {
                         Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
                 }
             
             }
+            .navigationBarTitle("BetterRest")
+            .navigationBarItems(trailing:
+                Button(action: calculateBedtime) {
+                    Text("Calculate")
+                }
+            )
         }
     }
     
