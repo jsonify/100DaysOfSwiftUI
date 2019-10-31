@@ -17,6 +17,34 @@ struct ContentView: View {
     @State private var alertMessage = ""
     @State private var showingAlert = false
     
+// Challenge 3
+    var bedtime: String {
+        let model = SleepCalculator()
+        
+        let components = Calendar.current.dateComponents([.hour, .minute], from: wakeUp)
+        let hour = (components.hour ?? 0) * 60 * 60
+        let minute = (components.minute ?? 0) * 60
+        
+        var timeMessage = ""
+        
+        do {
+            let prediction = try model.prediction(wake: Double(hour + minute), estimatedSleep: sleepAmount, coffee: Double(coffeeAmount))
+            
+            let sleepTime = wakeUp - prediction.actualSleep
+            
+            let formatter = DateFormatter()
+            formatter.timeStyle = .short
+            
+            timeMessage = formatter.string(from: sleepTime)
+            
+        } catch {
+            timeMessage = "Error"
+        }
+        return timeMessage
+    }
+    
+    var idealSleepTime = Date()
+    
     var body: some View {
         NavigationView {
             Form {
@@ -57,18 +85,22 @@ struct ContentView: View {
                     }
                 .pickerStyle(WheelPickerStyle())
                 }
-
-                    .alert(isPresented: $showingAlert) {
-                        Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+// Challenge 3
+                Section(header: Text("Ideal bedtime")) {
+                    
+                    Text("\(bedtime)")
+                        .font(.headline)
                 }
-            
+//                    .alert(isPresented: $showingAlert) {
+//                        Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+//                }
             }
             .navigationBarTitle("BetterRest")
-            .navigationBarItems(trailing:
-                Button(action: calculateBedtime) {
-                    Text("Calculate")
-                }
-            )
+//            .navigationBarItems(trailing:
+//                Button(action: calculateBedtime) {
+//                    Text("Calculate")
+//                }
+//            )
         }
     }
     
@@ -78,6 +110,10 @@ struct ContentView: View {
         components.minute = 0
         return Calendar.current.date(from: components) ?? Date()
     }
+// Challenge 3
+//    func calculateBedtimeAgain() -> String {
+//
+//    }
     
     func calculateBedtime() {
         let model = SleepCalculator()
