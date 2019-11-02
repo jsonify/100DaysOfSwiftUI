@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        List(0..<5) {
+            Text("Dynamic Row \($0)")
+        }
+        .listStyle(GroupedListStyle())
     }
 }
 
