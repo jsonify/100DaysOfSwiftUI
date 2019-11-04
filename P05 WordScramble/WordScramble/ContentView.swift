@@ -33,9 +33,15 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle(rootWord)
-            .onAppear(perform: startGame)
-            .alert(isPresented: $showingError) {
-                Alert(title: Text("\(errorTitle)"), message: Text("\(errorMessage)"), dismissButton: .default(Text("OK")))
+// Challenge 2
+            .navigationBarItems(leading:
+                Button(action: startGame) {
+                    Text("New Game")
+                }
+            )
+                .onAppear(perform: startGame)
+                .alert(isPresented: $showingError) {
+                    Alert(title: Text("\(errorTitle)"), message: Text("\(errorMessage)"), dismissButton: .default(Text("OK")))
             }
         }
     }
@@ -60,7 +66,7 @@ struct ContentView: View {
             wordError(title: "Word not possible", message: "That isn't a real word.")
             return
         }
-// Challenge 1
+        // Challenge 1
         guard isLongEnough(word: answer) else {
             wordError(title: "Word not long enough", message: "Your word is not the 3 letter minimum for this game.")
             return
@@ -75,6 +81,8 @@ struct ContentView: View {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 let allWords = startWords.components(separatedBy: "\n")
                 rootWord = allWords.randomElement() ?? "silkworm"
+                // Challenge 2
+                usedWords.removeAll()
                 return
             }
         }
@@ -98,7 +106,7 @@ struct ContentView: View {
         }
         return true
     }
-// Challenge 1
+    // Challenge 1
     func isLongEnough(word: String) -> Bool {
         guard word.count >= 3 else {
             return false
@@ -110,7 +118,7 @@ struct ContentView: View {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
-
+        
         return misspelledRange.location == NSNotFound
     }
     
