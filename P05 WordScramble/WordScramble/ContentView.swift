@@ -57,7 +57,12 @@ struct ContentView: View {
         }
         
         guard isReal(word: answer) else {
-            wordError(title: "Word not possible", message: "That isn't a real word")
+            wordError(title: "Word not possible", message: "That isn't a real word.")
+            return
+        }
+// Challenge 1
+        guard isLongEnough(word: answer) else {
+            wordError(title: "Word not long enough", message: "Your word is not the 3 letter minimum for this game.")
             return
         }
         
@@ -93,7 +98,14 @@ struct ContentView: View {
         }
         return true
     }
-
+// Challenge 1
+    func isLongEnough(word: String) -> Bool {
+        guard word.count >= 3 else {
+            return false
+        }
+        return true
+    }
+    
     func isReal(word: String) -> Bool {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
