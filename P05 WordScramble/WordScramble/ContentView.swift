@@ -12,6 +12,9 @@ struct ContentView: View {
     @State private var usedWords = [String]()
     @State private var rootWord = ""
     @State private var newWord = ""
+// Challenge 3
+    @State private var score = 0
+    @State private var scoreMultiplier = 1
     
     // word validation
     @State private var errorTitle = ""
@@ -22,23 +25,33 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("How many three or more letter words can you find in the word:")
+                    .padding()
+                Text("\(rootWord)")
+                    .font(.largeTitle)
+                    .foregroundColor(.red)
+                    .padding()
                 TextField("Enter your word", text: $newWord, onCommit: addNewWord)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
                     .padding()
-                
-                List(usedWords, id: \.self) {
-                    Image(systemName: "\($0.count).circle")
-                    Text($0)
+// Challenge 3
+                Form {
+                    Section(header: Text("Score: \(score)")) {
+                        List(usedWords, id: \.self) {
+                            Image(systemName: "\($0.count).circle")
+                            Text($0)
+                        }
+                    }
                 }
             }
-            .navigationBarTitle(rootWord)
+            .navigationBarTitle(Text("WordScramble"))
 // Challenge 2
-            .navigationBarItems(leading:
-                Button(action: startGame) {
-                    Text("New Game")
-                }
-            )
+                .navigationBarItems(leading:
+                    Button(action: startGame) {
+                        Text("New Game")
+                    }
+                )
                 .onAppear(perform: startGame)
                 .alert(isPresented: $showingError) {
                     Alert(title: Text("\(errorTitle)"), message: Text("\(errorMessage)"), dismissButton: .default(Text("OK")))
@@ -66,13 +79,30 @@ struct ContentView: View {
             wordError(title: "Word not possible", message: "That isn't a real word.")
             return
         }
-        // Challenge 1
+// Challenge 1
         guard isLongEnough(word: answer) else {
             wordError(title: "Word not long enough", message: "Your word is not the 3 letter minimum for this game.")
             return
         }
         
         usedWords.insert(answer, at: 0)
+// Challenge 3
+        let scoreCount = usedWords[0].count
+        if scoreCount == 3 {
+            scoreMultiplier = 1
+        } else if scoreCount == 4 {
+            scoreMultiplier = 2
+        } else if scoreCount == 5 {
+            scoreMultiplier = 3
+        } else if scoreCount == 6 {
+            scoreMultiplier = 4
+        } else if scoreCount == 7 {
+            scoreMultiplier = 5
+        } else {
+            scoreMultiplier = 6
+        }
+        
+        score = score + (scoreCount * scoreMultiplier)
         newWord = ""
     }
     
@@ -81,7 +111,7 @@ struct ContentView: View {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 let allWords = startWords.components(separatedBy: "\n")
                 rootWord = allWords.randomElement() ?? "silkworm"
-                // Challenge 2
+// Challenge 2
                 usedWords.removeAll()
                 return
             }
@@ -106,7 +136,7 @@ struct ContentView: View {
         }
         return true
     }
-    // Challenge 1
+// Challenge 1
     func isLongEnough(word: String) -> Bool {
         guard word.count >= 3 else {
             return false
