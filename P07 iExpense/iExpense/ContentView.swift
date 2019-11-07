@@ -20,6 +20,9 @@ struct ContentView: View {
                     NavigationLink("Storing user settings with UserDefaults", destination: StoringUserDefaults())
                     NavigationLink("Archiving Swift objects with Codable", destination: ArchivingWithCodable())
                 }
+                Section(header: Text("Main")) {
+                    NavigationLink("iExpense Application", destination: Application())
+                }
             }
             .navigationBarTitle("P07 - iExpense")
         }
