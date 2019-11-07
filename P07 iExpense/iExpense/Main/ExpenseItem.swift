@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct ExpenseItem {
-    var name: String
-    var type: String
-    var amount: Int
+struct ExpenseItem: Identifiable {
+    let id = UUID()
+    let name: String
+    let type: String
+    let amount: Int
 }
