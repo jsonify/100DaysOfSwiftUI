@@ -11,6 +11,19 @@ import SwiftUI
 struct Application: View {
     @ObservedObject var expenses = Expenses()
     @State private var showingAddExpense = false
+//    Challenge 2
+    func itemAmount(amount: Int) -> Text {
+        switch (amount < 10, amount > 100) {
+        case (true, false):
+            return Text("$\(amount)").foregroundColor(.green)
+        case (false, false):
+            return Text("$\(amount)").foregroundColor(.black)
+            case (false, true):
+            return Text("$\(amount)").foregroundColor(.red)
+        default:
+            return Text("")
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -22,14 +35,16 @@ struct Application: View {
                                 .font(.headline)
                             Text(item.type)
                         }
-                            Spacer()
-                        Text("$\(item.amount)")
+                        Spacer()
+//                        Challenge 2
+                        self.itemAmount(amount: item.amount)
                     }
                 }
                 .onDelete(perform: removeItems)
             }
             .navigationBarTitle("iExpense")
-            .navigationBarItems(trailing:
+//                Challenge 1
+            .navigationBarItems(leading: EditButton(), trailing:
                 Button(action: {
                     self.showingAddExpense = true
                 }) {
