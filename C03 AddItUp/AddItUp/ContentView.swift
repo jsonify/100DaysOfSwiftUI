@@ -55,12 +55,26 @@ struct ContentView: View {
                     }
                 }
                 Section(header: Text("Your answer:")) {
-                    TextField("Enter quantity", text: $answer)
-                        .keyboardType(.decimalPad)
+                    VStack {
+                        TextField("Enter quantity", text: $answer)
+                            .keyboardType(.decimalPad)
+                        Spacer()
+                        Button(action: {
+                            // do
+                            print("calculated")
+                        }) {
+                            Text("Calculate")
+                        }
+                    }
+                    
                 }
             }
         .navigationBarTitle("Add It Up!")
         }
+    }
+    
+    func calculate() {
+        print("Calculated")
     }
 }
 

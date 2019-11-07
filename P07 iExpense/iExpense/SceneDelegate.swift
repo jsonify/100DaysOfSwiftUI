@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  AddItUp
+//  iExpense
 //
-//  Created by Jason on 11/5/19.
+//  Created by Jason on 11/6/19.
 //  Copyright © 2019 Jason. All rights reserved.
 //
 
@@ -25,9 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(
-                rootView: contentView.onTapGesture { window.endEditing(true)}
-            )
+            window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
         }
