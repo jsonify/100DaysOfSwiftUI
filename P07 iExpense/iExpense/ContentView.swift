@@ -15,6 +15,7 @@ struct ContentView: View {
                 Section(header: Text("Basics")) {
                     NavigationLink("Using @State for single view", destination: UsingState())
                     NavigationLink("Using @ObservedObject for sharing", destination: ObservableObjects())
+                    NavigationLink("Showing and Hiding sheets", destination: ShowingHidingViews())
                 }
             }
             .navigationBarTitle("P07 - iExpense")
