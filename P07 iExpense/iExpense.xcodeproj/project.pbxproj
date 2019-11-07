@@ -17,6 +17,8 @@
 		96BD244E2373972E0068E37E /* UsingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD244D2373972E0068E37E /* UsingState.swift */; };
 		96BD2450237399100068E37E /* ShowingHidingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD244F237399100068E37E /* ShowingHidingViews.swift */; };
 		96BD24522373D6E60068E37E /* DeletingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD24512373D6E60068E37E /* DeletingItems.swift */; };
+		96BD24542373DE2A0068E37E /* StoringUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD24532373DE2A0068E37E /* StoringUserDefaults.swift */; };
+		96BD24562373E4840068E37E /* ArchivingWithCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD24552373E4840068E37E /* ArchivingWithCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		96BD244D2373972E0068E37E /* UsingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingState.swift; sourceTree = "<group>"; };
 		96BD244F237399100068E37E /* ShowingHidingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingHidingViews.swift; sourceTree = "<group>"; };
 		96BD24512373D6E60068E37E /* DeletingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletingItems.swift; sourceTree = "<group>"; };
+		96BD24532373DE2A0068E37E /* StoringUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoringUserDefaults.swift; sourceTree = "<group>"; };
+		96BD24552373E4840068E37E /* ArchivingWithCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivingWithCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				96BD244D2373972E0068E37E /* UsingState.swift */,
 				96BD244F237399100068E37E /* ShowingHidingViews.swift */,
 				96BD24512373D6E60068E37E /* DeletingItems.swift */,
+				96BD24532373DE2A0068E37E /* StoringUserDefaults.swift */,
+				96BD24552373E4840068E37E /* ArchivingWithCodable.swift */,
 				96BD243D237366C60068E37E /* Assets.xcassets */,
 				96BD2442237366C60068E37E /* LaunchScreen.storyboard */,
 				96BD2445237366C60068E37E /* Info.plist */,
@@ -159,9 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BD2438237366BD0068E37E /* AppDelegate.swift in Sources */,
+				96BD24542373DE2A0068E37E /* StoringUserDefaults.swift in Sources */,
 				96BD244C2373951C0068E37E /* ObservableObjects.swift in Sources */,
 				96BD244E2373972E0068E37E /* UsingState.swift in Sources */,
 				96BD24522373D6E60068E37E /* DeletingItems.swift in Sources */,
+				96BD24562373E4840068E37E /* ArchivingWithCodable.swift in Sources */,
 				96BD2450237399100068E37E /* ShowingHidingViews.swift in Sources */,
 				96BD243A237366BD0068E37E /* SceneDelegate.swift in Sources */,
 				96BD243C237366BD0068E37E /* ContentView.swift in Sources */,

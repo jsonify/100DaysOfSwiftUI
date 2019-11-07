@@ -17,6 +17,8 @@ struct ContentView: View {
                     NavigationLink("Using @ObservedObject for sharing", destination: ObservableObjects())
                     NavigationLink("Showing and Hiding sheets", destination: ShowingHidingViews())
                     NavigationLink("Deleting items using onDelete()", destination: DeletingItems())
+                    NavigationLink("Storing user settings with UserDefaults", destination: StoringUserDefaults())
+                    NavigationLink("Archiving Swift objects with Codable", destination: ArchivingWithCodable())
                 }
             }
             .navigationBarTitle("P07 - iExpense")
