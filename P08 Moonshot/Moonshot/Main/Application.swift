@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct Application: View {
+    let astronauts = Bundle.main.decode("astronauts.json")
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Astronaut Count: \(astronauts.count)")
     }
 }
 
