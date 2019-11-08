@@ -16,6 +16,7 @@
 		964ACE7A2375A758003345F6 /* UsingGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964ACE792375A758003345F6 /* UsingGeometryReader.swift */; };
 		964ACE7C2375A7B0003345F6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964ACE7B2375A7B0003345F6 /* Application.swift */; };
 		968F0AC62375D2100049B3C9 /* UsingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0AC52375D2100049B3C9 /* UsingScrollView.swift */; };
+		968F0AC82375E9FD0049B3C9 /* UsingNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0AC72375E9FD0049B3C9 /* UsingNavigationLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		964ACE792375A758003345F6 /* UsingGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingGeometryReader.swift; sourceTree = "<group>"; };
 		964ACE7B2375A7B0003345F6 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		968F0AC52375D2100049B3C9 /* UsingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingScrollView.swift; sourceTree = "<group>"; };
+		968F0AC72375E9FD0049B3C9 /* UsingNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingNavigationLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				964ACE792375A758003345F6 /* UsingGeometryReader.swift */,
 				968F0AC52375D2100049B3C9 /* UsingScrollView.swift */,
+				968F0AC72375E9FD0049B3C9 /* UsingNavigationLink.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				964ACE642375A68E003345F6 /* AppDelegate.swift in Sources */,
 				968F0AC62375D2100049B3C9 /* UsingScrollView.swift in Sources */,
 				964ACE7A2375A758003345F6 /* UsingGeometryReader.swift in Sources */,
+				968F0AC82375E9FD0049B3C9 /* UsingNavigationLink.swift in Sources */,
 				964ACE662375A68E003345F6 /* SceneDelegate.swift in Sources */,
 				964ACE682375A68E003345F6 /* ContentView.swift in Sources */,
 			);

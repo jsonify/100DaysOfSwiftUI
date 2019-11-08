@@ -15,6 +15,7 @@ struct ContentView: View {
                 Section(header: Text("Basics")) {
                     NavigationLink("Resizing images to fit the screen using GeometryReader", destination: UsingGeometryReader())
                     NavigationLink("Using ScrollView to working with scrolling data", destination: UsingScrollView())
+                    NavigationLink("Pushing new views onto the stack using NavigationLink", destination: UsingNavigationLink())
                 }
                 
                 Section(header: Text("Main")) {
