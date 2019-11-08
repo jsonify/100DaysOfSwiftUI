@@ -11,19 +11,6 @@ import SwiftUI
 struct Application: View {
     @ObservedObject var expenses = Expenses()
     @State private var showingAddExpense = false
-//    Challenge 2
-    func itemAmount(amount: Int) -> Text {
-        switch (amount < 10, amount > 100) {
-        case (true, false):
-            return Text("$\(amount)").foregroundColor(.green)
-        case (false, false):
-            return Text("$\(amount)").foregroundColor(.black)
-            case (false, true):
-            return Text("$\(amount)").foregroundColor(.red)
-        default:
-            return Text("")
-        }
-    }
     
     var body: some View {
         NavigationView {
@@ -60,6 +47,22 @@ struct Application: View {
     func removeItems(at offsets: IndexSet) {
         expenses.items.remove(atOffsets: offsets)
     }
+    
+    //    Challenge 2
+    func itemAmount(amount: Int) -> Text {
+        switch (amount < 10, amount > 100) {
+        case (true, false):
+            return Text("$\(amount)").foregroundColor(.green)
+        case (false, false):
+            return Text("$\(amount)").foregroundColor(.black)
+            case (false, true):
+            return Text("$\(amount)").foregroundColor(.red)
+        default:
+            return Text("")
+        }
+    }
+    
+    
 }
 
 struct Application_Previews: PreviewProvider {

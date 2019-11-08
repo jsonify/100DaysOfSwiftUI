@@ -15,6 +15,12 @@ struct AddView: View {
     @State private var type = "Personal"
     @State private var amount = ""
     
+//    Challeng 3
+    @State private var errorTitle = ""
+    @State private var errorMessage = ""
+    @State private var showingError = false
+    
+    
     static let types = ["Business", "Personal"]
     
     var body: some View {
@@ -34,14 +40,27 @@ struct AddView: View {
             .navigationBarTitle("Add New Expense")
             .navigationBarItems(trailing:
                 Button("Save") {
-                    if let actualAmount = Int(self.amount) {
-                        let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
-                        self.expenses.items.append(item)
+                    guard let actualAmount = Int(self.amount) else {
+                        self.wrongAmount()
+                        return
                     }
+                    let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
+                    self.expenses.items.append(item)
+                    
                     self.presentationMode.wrappedValue.dismiss()
                 }
             )
+//                Challeng 3
+            .alert(isPresented: $showingError) {
+                    Alert(title: Text("\(errorTitle)"), message: Text("\(errorMessage)"), dismissButton: .default(Text("OK")))
+            }
         }
+    }
+//    Challeng 3
+    func wrongAmount() {
+        errorTitle = "Wrong Amount!"
+        errorMessage = "That's not a valid number"
+        showingError = true
     }
 }
 
