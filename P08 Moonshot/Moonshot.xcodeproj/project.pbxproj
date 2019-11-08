@@ -22,6 +22,7 @@
 		968F0ACE237621FD0049B3C9 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 968F0ACC237621FC0049B3C9 /* astronauts.json */; };
 		968F0AD0237622690049B3C9 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0ACF237622690049B3C9 /* Astronaut.swift */; };
 		968F0AD2237624460049B3C9 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0AD1237624460049B3C9 /* Bundle-Decodable.swift */; };
+		968F0AD4237628500049B3C9 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0AD3237628500049B3C9 /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		968F0ACC237621FC0049B3C9 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		968F0ACF237622690049B3C9 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
 		968F0AD1237624460049B3C9 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		968F0AD3237628500049B3C9 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				964ACE7B2375A7B0003345F6 /* Application.swift */,
 				968F0ACF237622690049B3C9 /* Astronaut.swift */,
 				968F0AD1237624460049B3C9 /* Bundle-Decodable.swift */,
+				968F0AD3237628500049B3C9 /* Mission.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968F0AD4237628500049B3C9 /* Mission.swift in Sources */,
 				968F0AD0237622690049B3C9 /* Astronaut.swift in Sources */,
 				964ACE7C2375A7B0003345F6 /* Application.swift in Sources */,
 				964ACE642375A68E003345F6 /* AppDelegate.swift in Sources */,

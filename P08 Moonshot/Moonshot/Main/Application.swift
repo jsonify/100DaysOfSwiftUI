@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct Application: View {
-    let astronauts = Bundle.main.decode("astronauts.json")
+    let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
+    let missions: [Mission] = Bundle.main.decode("missions.json")
     
     var body: some View {
         Text("Astronaut Count: \(astronauts.count)")

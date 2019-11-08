@@ -12,7 +12,7 @@ struct HierarchicalCodableData: View {
     var body: some View {
         // Create a string of JSON in code to be used by the button
         Button("Decode JSON") {
-            var input = """
+            let input = """
             {
             "name": "Taylor Swift",
             "address": {
