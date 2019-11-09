@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Mission: Codable, Identifiable {
     // Crew roles need their own struct to store the name and role
     struct CrewRole: Codable {
