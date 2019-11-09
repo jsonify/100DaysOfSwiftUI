@@ -18,7 +18,6 @@ struct Application: View {
                 NavigationLink(destination: Text("Detail View")) {
                     Image(mission.image)
                     .resizable()
-//                        .aspectRatio(contentMode: .fit)
                     .scaledToFit()
                         .frame(width: 44, height: 44)
                     
