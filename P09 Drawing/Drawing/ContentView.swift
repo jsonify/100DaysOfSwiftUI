@@ -14,7 +14,7 @@ struct ContentView: View {
             List {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("Creating custom paths with SwiftUI", destination: CustomPaths())
-                    
+                    NavigationLink("Paths vs shapes in SwiftUI", destination: PathsVsShapes())
                 }
                 
                 Section(header: Text("Main")) {
