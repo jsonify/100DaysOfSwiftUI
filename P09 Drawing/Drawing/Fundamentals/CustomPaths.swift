@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+// Note: Problem here is that using rounded corners solves the problem of our rough edges, but it doesn’t solve the problem of fixed coordinates. For that we need to move on from paths and look at something more complex: shapes.
+
 struct CustomPaths: View {
     var body: some View {
         Path { path in
@@ -17,8 +19,8 @@ struct CustomPaths: View {
             path.addLine(to: CGPoint(x: 200, y: 100))
         }
 //        .fill(Color.blue)
-//            .stroke(Color.blue.opacity(0.25), lineWidth: 10)
-            .stroke(Color.blue, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+//        .stroke(Color.blue.opacity(0.25), lineWidth: 10)
+        .stroke(Color.blue, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
     }
 }
 
