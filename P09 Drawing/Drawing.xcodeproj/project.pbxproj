@@ -18,6 +18,7 @@
 		968F0B002377E23E0049B3C9 /* PathsVsShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0AFF2377E23E0049B3C9 /* PathsVsShapes.swift */; };
 		968F0B022379AD4A0049B3C9 /* UsingInsettableShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B012379AD4A0049B3C9 /* UsingInsettableShape.swift */; };
 		968F0B042379B0A80049B3C9 /* UsingCGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B032379B0A80049B3C9 /* UsingCGAffineTransform.swift */; };
+		968F0B06237A11B90049B3C9 /* UsingImagePaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B05237A11B90049B3C9 /* UsingImagePaint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		968F0AFF2377E23E0049B3C9 /* PathsVsShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsVsShapes.swift; sourceTree = "<group>"; };
 		968F0B012379AD4A0049B3C9 /* UsingInsettableShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingInsettableShape.swift; sourceTree = "<group>"; };
 		968F0B032379B0A80049B3C9 /* UsingCGAffineTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingCGAffineTransform.swift; sourceTree = "<group>"; };
+		968F0B05237A11B90049B3C9 /* UsingImagePaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingImagePaint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				968F0AFF2377E23E0049B3C9 /* PathsVsShapes.swift */,
 				968F0B012379AD4A0049B3C9 /* UsingInsettableShape.swift */,
 				968F0B032379B0A80049B3C9 /* UsingCGAffineTransform.swift */,
+				968F0B05237A11B90049B3C9 /* UsingImagePaint.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				968F0AFE2377DD3D0049B3C9 /* CustomPaths.swift in Sources */,
 				968F0B042379B0A80049B3C9 /* UsingCGAffineTransform.swift in Sources */,
 				968F0AE62377DC580049B3C9 /* AppDelegate.swift in Sources */,
+				968F0B06237A11B90049B3C9 /* UsingImagePaint.swift in Sources */,
 				968F0AE82377DC580049B3C9 /* SceneDelegate.swift in Sources */,
 				968F0AEA2377DC580049B3C9 /* ContentView.swift in Sources */,
 			);

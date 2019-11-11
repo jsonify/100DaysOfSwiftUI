@@ -17,6 +17,8 @@ struct ContentView: View {
                     NavigationLink("Paths vs shapes in SwiftUI", destination: PathsVsShapes())
                     NavigationLink("Adding strokeBorder() support with InsettableShape", destination: UsingInsettableShape())
                     NavigationLink("Transforming shapes using CGAffineTransform and even-odd fills", destination: UsingCGAffineTransform())
+                    NavigationLink("Creative borders and fills using ImagePaint", destination: UsingImagePaint())
+
                 }
                 
                 Section(header: Text("Main")) {
