@@ -20,6 +20,7 @@
 		968F0B042379B0A80049B3C9 /* UsingCGAffineTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B032379B0A80049B3C9 /* UsingCGAffineTransform.swift */; };
 		968F0B06237A11B90049B3C9 /* UsingImagePaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B05237A11B90049B3C9 /* UsingImagePaint.swift */; };
 		968F0B08237A7C010049B3C9 /* DrawingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B07237A7C010049B3C9 /* DrawingGroup.swift */; };
+		968F0B0A237A81220049B3C9 /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B09237A81220049B3C9 /* SpecialEffects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		968F0B032379B0A80049B3C9 /* UsingCGAffineTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingCGAffineTransform.swift; sourceTree = "<group>"; };
 		968F0B05237A11B90049B3C9 /* UsingImagePaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingImagePaint.swift; sourceTree = "<group>"; };
 		968F0B07237A7C010049B3C9 /* DrawingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingGroup.swift; sourceTree = "<group>"; };
+		968F0B09237A81220049B3C9 /* SpecialEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				968F0B032379B0A80049B3C9 /* UsingCGAffineTransform.swift */,
 				968F0B05237A11B90049B3C9 /* UsingImagePaint.swift */,
 				968F0B07237A7C010049B3C9 /* DrawingGroup.swift */,
+				968F0B09237A81220049B3C9 /* SpecialEffects.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968F0B0A237A81220049B3C9 /* SpecialEffects.swift in Sources */,
 				968F0AFC2377DD170049B3C9 /* Application.swift in Sources */,
 				968F0B002377E23E0049B3C9 /* PathsVsShapes.swift in Sources */,
 				968F0B022379AD4A0049B3C9 /* UsingInsettableShape.swift in Sources */,

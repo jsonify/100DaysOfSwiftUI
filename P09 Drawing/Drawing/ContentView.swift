@@ -19,6 +19,7 @@ struct ContentView: View {
                     NavigationLink("Transforming shapes using CGAffineTransform and even-odd fills", destination: UsingCGAffineTransform())
                     NavigationLink("Creative borders and fills using ImagePaint", destination: UsingImagePaint())
                     NavigationLink("Enabling high-performance Metal rendering with drawingGroup()", destination: DrawingGroup())
+                    NavigationLink("Special effects in SwiftUI: blurs, blending, and more", destination: SpecialEffects())
                 }
                 
                 Section(header: Text("Main")) {
