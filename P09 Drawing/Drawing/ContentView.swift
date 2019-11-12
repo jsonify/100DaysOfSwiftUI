@@ -20,6 +20,8 @@ struct ContentView: View {
                     NavigationLink("Creative borders and fills using ImagePaint", destination: UsingImagePaint())
                     NavigationLink("Enabling high-performance Metal rendering with drawingGroup()", destination: DrawingGroup())
                     NavigationLink("Special effects in SwiftUI: blurs, blending, and more", destination: SpecialEffects())
+                    NavigationLink("Animating simple shapes with animatableData", destination: AnimatableData())
+
                 }
                 
                 Section(header: Text("Main")) {
