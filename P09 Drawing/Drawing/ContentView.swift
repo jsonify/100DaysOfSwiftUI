@@ -18,7 +18,7 @@ struct ContentView: View {
                     NavigationLink("Adding strokeBorder() support with InsettableShape", destination: UsingInsettableShape())
                     NavigationLink("Transforming shapes using CGAffineTransform and even-odd fills", destination: UsingCGAffineTransform())
                     NavigationLink("Creative borders and fills using ImagePaint", destination: UsingImagePaint())
-
+                    NavigationLink("Enabling high-performance Metal rendering with drawingGroup()", destination: DrawingGroup())
                 }
                 
                 Section(header: Text("Main")) {
