@@ -21,6 +21,7 @@ struct ContentView: View {
                     NavigationLink("Enabling high-performance Metal rendering with drawingGroup()", destination: DrawingGroup())
                     NavigationLink("Special effects in SwiftUI: blurs, blending, and more", destination: SpecialEffects())
                     NavigationLink("Animating simple shapes with animatableData", destination: AnimatableData())
+                    NavigationLink("Animating complex shapes with AnimatablePair", destination: UsingAnimatablePair())
 
                 }
                 

@@ -22,6 +22,7 @@
 		968F0B08237A7C010049B3C9 /* DrawingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B07237A7C010049B3C9 /* DrawingGroup.swift */; };
 		968F0B0A237A81220049B3C9 /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B09237A81220049B3C9 /* SpecialEffects.swift */; };
 		968F0B0C237AF8A50049B3C9 /* AnimatableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B0B237AF8A50049B3C9 /* AnimatableData.swift */; };
+		968F0B0E237AFBBE0049B3C9 /* UsingAnimatablePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F0B0D237AFBBE0049B3C9 /* UsingAnimatablePair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		968F0B07237A7C010049B3C9 /* DrawingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingGroup.swift; sourceTree = "<group>"; };
 		968F0B09237A81220049B3C9 /* SpecialEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffects.swift; sourceTree = "<group>"; };
 		968F0B0B237AF8A50049B3C9 /* AnimatableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableData.swift; sourceTree = "<group>"; };
+		968F0B0D237AFBBE0049B3C9 /* UsingAnimatablePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingAnimatablePair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				968F0B07237A7C010049B3C9 /* DrawingGroup.swift */,
 				968F0B09237A81220049B3C9 /* SpecialEffects.swift */,
 				968F0B0B237AF8A50049B3C9 /* AnimatableData.swift */,
+				968F0B0D237AFBBE0049B3C9 /* UsingAnimatablePair.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				968F0B042379B0A80049B3C9 /* UsingCGAffineTransform.swift in Sources */,
 				968F0AE62377DC580049B3C9 /* AppDelegate.swift in Sources */,
 				968F0B08237A7C010049B3C9 /* DrawingGroup.swift in Sources */,
+				968F0B0E237AFBBE0049B3C9 /* UsingAnimatablePair.swift in Sources */,
 				968F0B06237A11B90049B3C9 /* UsingImagePaint.swift in Sources */,
 				968F0AE82377DC580049B3C9 /* SceneDelegate.swift in Sources */,
 				968F0AEA2377DC580049B3C9 /* ContentView.swift in Sources */,
