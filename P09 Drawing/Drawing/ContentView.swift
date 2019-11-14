@@ -22,7 +22,7 @@ struct ContentView: View {
                     NavigationLink("Special effects in SwiftUI: blurs, blending, and more", destination: SpecialEffects())
                     NavigationLink("Animating simple shapes with animatableData", destination: AnimatableData())
                     NavigationLink("Animating complex shapes with AnimatablePair", destination: UsingAnimatablePair())
-
+                    NavigationLink("Creating a spirograph in SwiftUI", destination: CreatingSpirograph())
                 }
                 
                 Section(header: Text("Main")) {
