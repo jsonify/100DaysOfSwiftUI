@@ -13,7 +13,7 @@ struct ContentView: View {
             List {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("Adding Codable conformance for @Published properties", destination: AtPublishedProperties())
-
+                    NavigationLink("Sending and receiving Codable data with URLSession and SwiftUI", destination: UsingURLSession())
                 }
                 
                 Section(header: Text("Main")) {
