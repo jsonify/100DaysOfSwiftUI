@@ -17,6 +17,8 @@
 		96AA878A237E5C330098B5C5 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA8789237E5C330098B5C5 /* Application.swift */; };
 		96AA878C237F3EE20098B5C5 /* UsingURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA878B237F3EE20098B5C5 /* UsingURLSession.swift */; };
 		96AA878E237F44BA0098B5C5 /* ValidatingDisablingForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA878D237F44BA0098B5C5 /* ValidatingDisablingForms.swift */; };
+		96AA87902380A0CB0098B5C5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA878F2380A0CB0098B5C5 /* Order.swift */; };
+		96AA879223812F6E0098B5C5 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA879123812F6E0098B5C5 /* AddressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		96AA8789237E5C330098B5C5 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		96AA878B237F3EE20098B5C5 /* UsingURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingURLSession.swift; sourceTree = "<group>"; };
 		96AA878D237F44BA0098B5C5 /* ValidatingDisablingForms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatingDisablingForms.swift; sourceTree = "<group>"; };
+		96AA878F2380A0CB0098B5C5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		96AA879123812F6E0098B5C5 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				96AA8789237E5C330098B5C5 /* Application.swift */,
+				96AA878F2380A0CB0098B5C5 /* Order.swift */,
+				96AA879123812F6E0098B5C5 /* AddressView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -176,8 +182,10 @@
 			files = (
 				96AA878A237E5C330098B5C5 /* Application.swift in Sources */,
 				96AA878C237F3EE20098B5C5 /* UsingURLSession.swift in Sources */,
+				96AA87902380A0CB0098B5C5 /* Order.swift in Sources */,
 				96AA8788237E5A0E0098B5C5 /* AtPublishedProperties.swift in Sources */,
 				96AA8772237E595D0098B5C5 /* AppDelegate.swift in Sources */,
+				96AA879223812F6E0098B5C5 /* AddressView.swift in Sources */,
 				96AA878E237F44BA0098B5C5 /* ValidatingDisablingForms.swift in Sources */,
 				96AA8774237E595D0098B5C5 /* SceneDelegate.swift in Sources */,
 				96AA8776237E595D0098B5C5 /* ContentView.swift in Sources */,
