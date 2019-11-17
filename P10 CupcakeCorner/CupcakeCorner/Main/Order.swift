@@ -12,6 +12,10 @@ import Foundation
  Swift doesn’t understand how to encode and decode published properties. This is a problem, because we want to submit the user’s order to an internet server, which means we need it as JSON – we need the Codable protocol to work.
  
  The fix here is to add Codable conformance by hand, which means telling Swift what should be encoded, how it should be encoded, and also how it should be decoded – converted back from JSON to Swift data.
+ 
+ iOS comes with some fantastic functionality for handling networking, and in particular the URLSession class makes it surprisingly easy to send and receive data.
+ 
+ If we combine that with Codable to convert Swift objects to and from JSON, and URLRequest, which lets us configure exactly how data should be sent, we can accomplish great things in about 20 lines of code.
  */
 
 class Order: ObservableObject, Codable {
