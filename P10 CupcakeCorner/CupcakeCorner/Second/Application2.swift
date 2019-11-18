@@ -16,8 +16,8 @@ struct Application2: View {
             Form {
                 Section {
                     Picker("What kind of cake?", selection: $order.type) {
-                        ForEach(0..<Order2.types.count) {
-                            Text(Order2.types[$0])
+                        ForEach(0..<Order2.types.count, id: \.self) {
+                        Text(Order2.types[$0])
                         }
                     }
                     

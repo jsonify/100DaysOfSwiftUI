@@ -23,6 +23,7 @@
 		96AA8799238276840098B5C5 /* Application2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA8798238276840098B5C5 /* Application2.swift */; };
 		96AA879D23827AD80098B5C5 /* Order2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA879C23827AD70098B5C5 /* Order2.swift */; };
 		96AA879F23827E240098B5C5 /* AddressView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA879E23827E240098B5C5 /* AddressView2.swift */; };
+		96AA87A12382DC630098B5C5 /* CheckoutView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87A02382DC630098B5C5 /* CheckoutView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		96AA8798238276840098B5C5 /* Application2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application2.swift; sourceTree = "<group>"; };
 		96AA879C23827AD70098B5C5 /* Order2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order2.swift; sourceTree = "<group>"; };
 		96AA879E23827E240098B5C5 /* AddressView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView2.swift; sourceTree = "<group>"; };
+		96AA87A02382DC630098B5C5 /* CheckoutView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				96AA8798238276840098B5C5 /* Application2.swift */,
 				96AA879C23827AD70098B5C5 /* Order2.swift */,
 				96AA879E23827E240098B5C5 /* AddressView2.swift */,
+				96AA87A02382DC630098B5C5 /* CheckoutView2.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				96AA878E237F44BA0098B5C5 /* ValidatingDisablingForms.swift in Sources */,
 				96AA8799238276840098B5C5 /* Application2.swift in Sources */,
 				96AA879D23827AD80098B5C5 /* Order2.swift in Sources */,
+				96AA87A12382DC630098B5C5 /* CheckoutView2.swift in Sources */,
 				96AA8774237E595D0098B5C5 /* SceneDelegate.swift in Sources */,
 				96AA8776237E595D0098B5C5 /* ContentView.swift in Sources */,
 			);

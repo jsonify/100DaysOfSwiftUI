@@ -11,13 +11,23 @@ import SwiftUI
 struct AddressView2: View {
     @ObservedObject var order: Order2
     
-    @State private var name = ""
-    @State private var streetAddress = ""
-    @State private var city = ""
-    @State private var zip = ""
-    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section {
+                TextField("Name", text: $order.name)
+                TextField("Street Address", text: $order.streetAddress)
+                TextField("City", text: $order.city)
+                TextField("Zip", text: $order.zip)
+            }
+            
+            Section {
+                NavigationLink(destination: CheckoutView2(order: order)) {
+                    Text("Check out")
+                }
+            }
+            .disabled(order.hasValidAddress == false)
+        }
+        .navigationBarTitle("Delivery Details", displayMode: .inline)
     }
 }
 
