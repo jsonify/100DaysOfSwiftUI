@@ -20,6 +20,9 @@
 		96AA87902380A0CB0098B5C5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA878F2380A0CB0098B5C5 /* Order.swift */; };
 		96AA879223812F6E0098B5C5 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA879123812F6E0098B5C5 /* AddressView.swift */; };
 		96AA87942381318B0098B5C5 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87932381318B0098B5C5 /* CheckoutView.swift */; };
+		96AA8799238276840098B5C5 /* Application2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA8798238276840098B5C5 /* Application2.swift */; };
+		96AA879D23827AD80098B5C5 /* Order2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA879C23827AD70098B5C5 /* Order2.swift */; };
+		96AA879F23827E240098B5C5 /* AddressView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA879E23827E240098B5C5 /* AddressView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		96AA878F2380A0CB0098B5C5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		96AA879123812F6E0098B5C5 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		96AA87932381318B0098B5C5 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		96AA8798238276840098B5C5 /* Application2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application2.swift; sourceTree = "<group>"; };
+		96AA879C23827AD70098B5C5 /* Order2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order2.swift; sourceTree = "<group>"; };
+		96AA879E23827E240098B5C5 /* AddressView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		96AA8770237E595D0098B5C5 /* CupcakeCorner */ = {
 			isa = PBXGroup;
 			children = (
+				96AA8795238275B10098B5C5 /* Second */,
 				96AA8786237E598B0098B5C5 /* Fundamentals */,
 				96AA8785237E59760098B5C5 /* Main */,
 				96AA8771237E595D0098B5C5 /* AppDelegate.swift */,
@@ -110,6 +117,16 @@
 				96AA878D237F44BA0098B5C5 /* ValidatingDisablingForms.swift */,
 			);
 			path = Fundamentals;
+			sourceTree = "<group>";
+		};
+		96AA8795238275B10098B5C5 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				96AA8798238276840098B5C5 /* Application2.swift */,
+				96AA879C23827AD70098B5C5 /* Order2.swift */,
+				96AA879E23827E240098B5C5 /* AddressView2.swift */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96AA878A237E5C330098B5C5 /* Application.swift in Sources */,
+				96AA879F23827E240098B5C5 /* AddressView2.swift in Sources */,
 				96AA878C237F3EE20098B5C5 /* UsingURLSession.swift in Sources */,
 				96AA87942381318B0098B5C5 /* CheckoutView.swift in Sources */,
 				96AA87902380A0CB0098B5C5 /* Order.swift in Sources */,
@@ -191,6 +209,8 @@
 				96AA8772237E595D0098B5C5 /* AppDelegate.swift in Sources */,
 				96AA879223812F6E0098B5C5 /* AddressView.swift in Sources */,
 				96AA878E237F44BA0098B5C5 /* ValidatingDisablingForms.swift in Sources */,
+				96AA8799238276840098B5C5 /* Application2.swift in Sources */,
+				96AA879D23827AD80098B5C5 /* Order2.swift in Sources */,
 				96AA8774237E595D0098B5C5 /* SceneDelegate.swift in Sources */,
 				96AA8776237E595D0098B5C5 /* ContentView.swift in Sources */,
 			);

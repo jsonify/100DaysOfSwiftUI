@@ -19,6 +19,7 @@ struct ContentView: View {
                 
                 Section(header: Text("Main")) {
                     NavigationLink("Application: Cupcake Corner", destination: Application())
+                    NavigationLink("Application: Cupcake Corner - Take 2", destination: Application2())
                 }
             }
         .navigationBarTitle("P10 - Cupcake Corner")
