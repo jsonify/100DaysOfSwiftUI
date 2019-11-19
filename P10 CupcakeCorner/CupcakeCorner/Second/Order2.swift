@@ -76,7 +76,7 @@ class Order2: ObservableObject, Codable {
     }
     
     func encode(to encoder: Encoder) throws {
-        var container = try encoder.container(keyedBy: CodingKeys.self)
+        var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(type, forKey: .type)
         try container.encode(quantity, forKey: .quantity)
