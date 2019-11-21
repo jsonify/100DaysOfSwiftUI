@@ -14,6 +14,7 @@ struct ContentView: View {
             Form {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("Creating a custom component with @Binding", destination: CustomComponent())
+                    NavigationLink("Using size classes with AnyView type erasure", destination: UsingAnyView())
                 }
                 
                 Section(header: Text("Main")) {
