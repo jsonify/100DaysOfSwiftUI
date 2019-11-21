@@ -15,6 +15,7 @@ struct ContentView: View {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("Creating a custom component with @Binding", destination: CustomComponent())
                     NavigationLink("Using size classes with AnyView type erasure", destination: UsingAnyView())
+                    NavigationLink("How to combine Core Data and SwiftUI", destination: UsingCoreData())
                 }
                 
                 Section(header: Text("Main")) {

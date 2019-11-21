@@ -9,13 +9,29 @@
 import SwiftUI
 
 struct UsingAnyView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    //    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.horizontalSizeClass) var sizeClass
 
-struct UsingAnyView_Previews: PreviewProvider {
-    static var previews: some View {
-        UsingAnyView()
+        
+        var body: some View {
+            if sizeClass == .compact {
+                return AnyView(VStack {
+                    Text("Active size class:")
+                    Text("COMPACT")
+                }
+                .font(.largeTitle))
+            } else {
+                return AnyView(HStack {
+                    Text("Active size class:")
+                    Text("REGULAR")
+                }
+                .font(.largeTitle))
+            }
+        }
     }
+    
+    struct UsingAnyView_Previews: PreviewProvider {
+        static var previews: some View {
+            UsingAnyView()
+        }
 }
