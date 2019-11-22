@@ -18,6 +18,7 @@
 		96AA87F0238508CD0098B5C5 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87EF238508CD0098B5C5 /* Application.swift */; };
 		96AA87F2238517710098B5C5 /* UsingAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87F1238517710098B5C5 /* UsingAnyView.swift */; };
 		96AA87F42386C8A30098B5C5 /* UsingCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87F32386C8A20098B5C5 /* UsingCoreData.swift */; };
+		96AA87F623875D4B0098B5C5 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87F523875D4B0098B5C5 /* AddBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		96AA87EF238508CD0098B5C5 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		96AA87F1238517710098B5C5 /* UsingAnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingAnyView.swift; sourceTree = "<group>"; };
 		96AA87F32386C8A20098B5C5 /* UsingCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingCoreData.swift; sourceTree = "<group>"; };
+		96AA87F523875D4B0098B5C5 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				96AA87EF238508CD0098B5C5 /* Application.swift */,
+				96AA87F523875D4B0098B5C5 /* AddBookView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96AA87F0238508CD0098B5C5 /* Application.swift in Sources */,
+				96AA87F623875D4B0098B5C5 /* AddBookView.swift in Sources */,
 				96AA87F2238517710098B5C5 /* UsingAnyView.swift in Sources */,
 				96AA87D52385087E0098B5C5 /* AppDelegate.swift in Sources */,
 				96AA87DA2385087E0098B5C5 /* Bookworm.xcdatamodeld in Sources */,
