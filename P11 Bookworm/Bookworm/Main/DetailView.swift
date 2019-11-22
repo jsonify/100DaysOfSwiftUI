@@ -20,21 +20,22 @@ struct DetailView: View {
                         .frame(maxWidth: geometry.size.width)
                     
                     Text(self.book.genre?.uppercased() ?? "FANTASY")
-                    .font(.caption)
-                    .fontWeight(.black)
-                    .padding(8)
-                    .foregroundColor(.white)
-                    .background(Color.black.opacity(0.75))
-                    .clipShape(Capsule())
-                    .offset(x: -5, y: -5)
+                        .font(.caption)
+                        .fontWeight(.black)
+                        .padding(8)
+                        .foregroundColor(.white)
+                        .background(Color.black.opacity(0.75))
+                        .clipShape(Capsule())
+                        .offset(x: -5, y: -5)
                 }
                 
                 Text(self.book.author ?? "Unknown Author")
                     .font(.title)
                     .foregroundColor(.secondary)
                 
-                Text(self.book.review ?? "No Review")
-                .padding()
+                Text("\"\(self.book.review ?? "No Review")\"")
+                    .italic()
+                    .padding()
                 
                 RatingView(rating: .constant(Int(self.book.rating)))
                     .font(.largeTitle)
@@ -48,7 +49,7 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-
+    
     static var previews: some View {
         let book = Book(context: moc)
         book.title = "Test Book"
