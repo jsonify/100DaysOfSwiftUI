@@ -29,17 +29,19 @@ struct Application: View {
                         }
                     }
                 }
-            .onDelete(perform: deleteBooks)
+                    // trigger the delete swipe action
+                    .onDelete(perform: deleteBooks)
             }
-                .navigationBarTitle("Bookworm")
-            .navigationBarItems(leading: EditButton(),trailing: Button(action: {
-                    self.showingAddScreen.toggle()
-                }) {
-                    Image(systemName: "plus")
-                })
+            .navigationBarTitle("Bookworm")
+                // add the EditButton method to the nav bar items
+            .navigationBarItems(leading: EditButton(), trailing: Button(action: {
+                self.showingAddScreen.toggle()
+            }) {
+                Image(systemName: "plus")
+            })
                 .sheet(isPresented: $showingAddScreen) {
                     AddBookView().environment(\.managedObjectContext, self.moc)
-                }
+            }
         }
     }
     
