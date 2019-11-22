@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961E09BD2387A9D500222645 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961E09BC2387A9D500222645 /* RatingView.swift */; };
 		96AA87D52385087E0098B5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87D42385087E0098B5C5 /* AppDelegate.swift */; };
 		96AA87D72385087E0098B5C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87D62385087E0098B5C5 /* SceneDelegate.swift */; };
 		96AA87DA2385087E0098B5C5 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96AA87D82385087E0098B5C5 /* Bookworm.xcdatamodeld */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		961E09BC2387A9D500222645 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		96AA87D12385087E0098B5C5 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AA87D42385087E0098B5C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96AA87D62385087E0098B5C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				96AA87EF238508CD0098B5C5 /* Application.swift */,
 				96AA87F523875D4B0098B5C5 /* AddBookView.swift */,
+				961E09BC2387A9D500222645 /* RatingView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				96AA87F0238508CD0098B5C5 /* Application.swift in Sources */,
 				96AA87F623875D4B0098B5C5 /* AddBookView.swift in Sources */,
 				96AA87F2238517710098B5C5 /* UsingAnyView.swift in Sources */,
+				961E09BD2387A9D500222645 /* RatingView.swift in Sources */,
 				96AA87D52385087E0098B5C5 /* AppDelegate.swift in Sources */,
 				96AA87DA2385087E0098B5C5 /* Bookworm.xcdatamodeld in Sources */,
 				96AA87DC2385087E0098B5C5 /* ContentView.swift in Sources */,
