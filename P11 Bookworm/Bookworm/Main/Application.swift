@@ -24,6 +24,8 @@ struct Application: View {
                         VStack(alignment: .leading) {
                             Text(book.title ?? "Unknown Title")
                                 .font(.headline)
+                                // Challeng 2
+                                .foregroundColor(book.rating > 1 ? .primary : .red)
                             Text(book.author ?? "Unknown Author")
                                 .foregroundColor(.secondary)
                         }
