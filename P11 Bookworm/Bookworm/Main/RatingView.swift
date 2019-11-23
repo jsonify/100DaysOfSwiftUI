@@ -8,6 +8,10 @@
 
 import SwiftUI
 
+/*
+ @Binding is particularly useful when building custom UI components, because its ability to share data between views is just so useful.
+ */
+
 struct RatingView: View {
     @Binding var rating: Int
     
