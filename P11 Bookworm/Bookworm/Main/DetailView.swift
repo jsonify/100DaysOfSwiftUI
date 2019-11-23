@@ -10,6 +10,13 @@ import SwiftUI
 import CoreData
 
 struct DetailView: View {
+    // one to hold our Core Data managed object context (so we can delete stuff)
+    @Environment(\.managedObjectContext) var moc
+    // one to hold our presentation mode (so we can pop the view off the navigation stack)
+    @Environment(\.presentationMode) var presentationMode
+    // one to control whether we’re showing the delete confirmation alert or not
+    @State private var showingDeleteAlert = false
+    
     let book: Book
     
     var body: some View {
@@ -43,7 +50,27 @@ struct DetailView: View {
                 Spacer()
             }
         }
+        .alert(isPresented: $showingDeleteAlert) {
+            // use “Delete” for the destructive button
+            Alert(title: Text("Delete Book"), message: Text("Are you sure?"), primaryButton: .destructive(Text("Ok")) {
+                // call the deleteBook method
+                self.deleteBook()
+                // then provide a .cancel() button next to it so users can back out of deleting if they want
+                }, secondaryButton: .cancel())
+        }
         .navigationBarTitle(Text(book.title ?? "Unknown Book"), displayMode: .inline)
+            // add a navigation bar item that starts the deletion process – this just need to flip the showingDeleteAlert Boolean
+            .navigationBarItems(trailing: Button(action: {
+                self.showingDeleteAlert = true
+            }) {
+                Image(systemName: "trash")
+            })
+    }
+    
+    func deleteBook() {
+        moc.delete(book)
+        
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
