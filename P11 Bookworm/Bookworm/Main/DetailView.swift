@@ -19,6 +19,17 @@ struct DetailView: View {
     
     let book: Book
     
+    // Challenge 3
+    private var formattedDate: String {
+        guard let date = book.date else {
+            return "..."
+        }
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter.string(from: date)
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -46,6 +57,12 @@ struct DetailView: View {
                 
                 RatingView(rating: .constant(Int(self.book.rating)))
                     .font(.largeTitle)
+                    .padding()
+                
+                // Challenge 3
+                Text("Added: \(self.formattedDate)")
+                    .font(.caption)
+                .padding()
                 
                 Spacer()
             }
@@ -74,6 +91,10 @@ struct DetailView: View {
     }
 }
 
+extension Book {
+    
+}
+
 struct DetailView_Previews: PreviewProvider {
     static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
     
@@ -84,6 +105,7 @@ struct DetailView_Previews: PreviewProvider {
         book.genre = "Fantasy"
         book.rating = 4
         book.review = "This was a great book. Really enjoyed it."
+        book.date = Date()
         
         return NavigationView {
             DetailView(book: book)

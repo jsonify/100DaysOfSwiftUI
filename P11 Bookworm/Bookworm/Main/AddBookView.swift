@@ -18,6 +18,7 @@ struct AddBookView: View {
     // Challenge 1
     @State private var genre = "Fantasy"
     @State private var review = ""
+    @State private var date = Date()
     
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
@@ -52,6 +53,8 @@ struct AddBookView: View {
                         newBook.genre = self.genre
                         // convert rating to an Int16 to match Core Data
                         newBook.rating = Int16(self.rating)
+                        
+                        newBook.date = self.date
                         
                         // save the managed object context
                         try? self.moc.save()
