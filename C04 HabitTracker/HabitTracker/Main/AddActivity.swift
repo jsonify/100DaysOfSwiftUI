@@ -10,6 +10,7 @@ import SwiftUI
 
 struct AddActivity: View {
     @Environment(\.presentationMode) var presentationMode
+    
     @ObservedObject var activities: Activities
     
     @State private var name = ""
@@ -25,13 +26,15 @@ struct AddActivity: View {
                 TextField("Name", text: $name)
                 TextField("Description", text: $description)
             }
+            .navigationBarTitle("Add new habit")
+            .navigationBarItems(
+                trailing: Button("Save") {
+                    self.validateHabit()
+                    self.presentationMode.wrappedValue.dismiss()
+                }
+                .disabled(disableSave)
+            )
         }
-        .navigationBarItems(trailing: Button("Save") {
-            self.validateHabit()
-            self.presentationMode.wrappedValue.dismiss()
-        }
-        .disabled(disableSave)
-        )
     }
     
     func validateHabit() {
@@ -44,7 +47,10 @@ struct AddActivity: View {
     }
 }
 
+
+
 struct AddActivity_Previews: PreviewProvider {
+    
     static var previews: some View {
         AddActivity(activities: Activities())
     }

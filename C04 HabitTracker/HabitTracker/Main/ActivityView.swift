@@ -12,7 +12,11 @@ struct ActivityView: View {
     @Binding var activity: Activity
     
     var body: some View {
-        Text(activity.name)
+        VStack {
+            Text(activity.name)
+            Text(activity.description)
+            
+        }
     }
 }
 
