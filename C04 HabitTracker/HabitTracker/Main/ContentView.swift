@@ -26,14 +26,19 @@ struct ContentView: View {
                             Text(self.activities.items[idx].name)
                         }
                     }
+                .onDelete(perform: removeHabit)
                 }
             }
+            .navigationBarTitle("Habit Tracker")
+        .padding()
         }
-        .navigationBarTitle("Habit Tracker")
-        
         .sheet(isPresented: $showingNewHabit) {
             AddActivity(activities: self.activities)
         }
+    }
+    
+    func removeHabit(at offsets: IndexSet) {
+        activities.items.remove(atOffsets: offsets)
     }
 }
 
