@@ -8,8 +8,9 @@
 
 import SwiftUI
 
-class Order {
-    var items = [MenuItem]()
+// Anything that conforms to ObservableObject can be used inside SwiftUI, and publish announcements when its values have changed so the user interface can be updated
+class Order: ObservableObject {
+    @Published var items = [MenuItem]()
 
     var total: Int {
         if items.count > 0 {
