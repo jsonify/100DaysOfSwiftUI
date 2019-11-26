@@ -21,6 +21,7 @@
 		964A7B3F238CA4B300E8144B /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B3E238CA4B300E8144B /* ItemDetail.swift */; };
 		964A7B41238D620000E8144B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B40238D620000E8144B /* OrderView.swift */; };
 		964A7B43238D6A5C00E8144B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B42238D6A5C00E8144B /* AppView.swift */; };
+		964A7B45238D6D3800E8144B /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B44238D6D3800E8144B /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		964A7B3E238CA4B300E8144B /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		964A7B40238D620000E8144B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		964A7B42238D6A5C00E8144B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		964A7B44238D6D3800E8144B /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				964A7B20238C726800E8144B /* AppDelegate.swift */,
 				964A7B22238C726800E8144B /* SceneDelegate.swift */,
+				964A7B44238D6D3800E8144B /* CheckoutView.swift */,
 				964A7B24238C726800E8144B /* ContentView.swift */,
 				964A7B3C238C9A2C00E8144B /* ItemRow.swift */,
 				964A7B3E238CA4B300E8144B /* ItemDetail.swift */,
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				964A7B39238C736200E8144B /* Order.swift in Sources */,
+				964A7B45238D6D3800E8144B /* CheckoutView.swift in Sources */,
 				964A7B21238C726800E8144B /* AppDelegate.swift in Sources */,
 				964A7B23238C726800E8144B /* SceneDelegate.swift in Sources */,
 				964A7B3D238C9A2C00E8144B /* ItemRow.swift in Sources */,
