@@ -14,6 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     // create a new order when the app starts, and keeps it alive regardless of what view we show
+    // create an instance of Order and placed it into the environment. As a result, any view that comes from ContentView can read that order back out and manipulate it
     var order = Order()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -23,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         
-        // 
+        // Environment objects are SwiftUI’s way of sharing data across many places
         let contentView = ContentView().environmentObject(order)
 
         // Use a UIHostingController as window root view controller.

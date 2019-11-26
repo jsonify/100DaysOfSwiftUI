@@ -19,6 +19,7 @@
 		964A7B3B238C73A400E8144B /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 964A7B3A238C73A400E8144B /* menu.json */; };
 		964A7B3D238C9A2C00E8144B /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B3C238C9A2C00E8144B /* ItemRow.swift */; };
 		964A7B3F238CA4B300E8144B /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B3E238CA4B300E8144B /* ItemDetail.swift */; };
+		964A7B41238D620000E8144B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B40238D620000E8144B /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		964A7B3A238C73A400E8144B /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		964A7B3C238C9A2C00E8144B /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		964A7B3E238CA4B300E8144B /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		964A7B40238D620000E8144B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				964A7B24238C726800E8144B /* ContentView.swift */,
 				964A7B3C238C9A2C00E8144B /* ItemRow.swift */,
 				964A7B3E238CA4B300E8144B /* ItemDetail.swift */,
+				964A7B40238D620000E8144B /* OrderView.swift */,
 				964A7B26238C726C00E8144B /* Assets.xcassets */,
 				964A7B2B238C726C00E8144B /* LaunchScreen.storyboard */,
 				964A7B36238C736100E8144B /* Menu.swift */,
@@ -171,6 +174,7 @@
 				964A7B3D238C9A2C00E8144B /* ItemRow.swift in Sources */,
 				964A7B25238C726800E8144B /* ContentView.swift in Sources */,
 				964A7B3F238CA4B300E8144B /* ItemDetail.swift in Sources */,
+				964A7B41238D620000E8144B /* OrderView.swift in Sources */,
 				964A7B35238C732F00E8144B /* Helper.swift in Sources */,
 				964A7B38238C736200E8144B /* Menu.swift in Sources */,
 			);
