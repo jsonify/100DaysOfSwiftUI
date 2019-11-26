@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct AppView: View {
+    @EnvironmentObject var order: Order
+    
     var body: some View {
         TabView {
             ContentView()
@@ -20,7 +22,7 @@ struct AppView: View {
             OrderView()
                 .tabItem {
                     Image(systemName: "square.and.pencil")
-                    Text("Order View")
+                    Text(order.items.count > 0 ? "Cart (\(order.items.count))" : "Cart")
             }
         }
     }
