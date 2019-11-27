@@ -14,6 +14,8 @@ struct CheckoutView: View {
     static let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
     static let tipAmounts = [10, 15, 20, 25, 0]
     
+    static let pickupTimes = ["Now", "Tonight", "Tomorrow Morning"]
+    @State private var pickupTime = 0
     
     @State private var paymentType = 1
     @State private var addLoyaltyDetails = false
@@ -25,6 +27,10 @@ struct CheckoutView: View {
         let total = Double(order.total)
         let tipValue = total / 100 * Double(Self.tipAmounts[tipAmount])
         return total + tipValue
+    }
+    
+    var pickupInfo: String {
+        return Self.pickupTimes[pickupTime].lowercased()
     }
     
     var body: some View {
@@ -53,8 +59,18 @@ struct CheckoutView: View {
                 }.pickerStyle(SegmentedPickerStyle())
             }
             
+            Section(header: Text("Pickup Information")) {
+                Picker("What time will you pick up?", selection: $pickupTime) {
+                    ForEach(0..<Self.pickupTimes.count) {
+                        Text("\(Self.pickupTimes[$0])")
+                    }
+                }
+            .pickerStyle(SegmentedPickerStyle())
+            }
+            
             Section(header:
                 Text("$\(totalPrice, specifier: "%.2f")")
+                    .font(.largeTitle)
             ) {
                 Button("Confirm Order") {
                     // place order
@@ -64,7 +80,7 @@ struct CheckoutView: View {
         }
         .navigationBarTitle(Text("Payment"), displayMode: .inline)
         .alert(isPresented: $showingPaymentAlert) {
-            Alert(title: Text("Order Confirmed"), message: Text("Your total was \(totalPrice, specifier: "%2.f"). Enjoy your food."), dismissButton: .default(Text("Ok")))
+            Alert(title: Text("Order Confirmed"), message: Text("Your total was $\(totalPrice, specifier: "%2.f") and is set to be picked up \(Self.pickupTimes[pickupTime].lowercased())."), dismissButton: .default(Text("Ok")))
         }
     }
 }

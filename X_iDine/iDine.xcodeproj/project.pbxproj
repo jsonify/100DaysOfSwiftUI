@@ -22,6 +22,7 @@
 		964A7B41238D620000E8144B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B40238D620000E8144B /* OrderView.swift */; };
 		964A7B43238D6A5C00E8144B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B42238D6A5C00E8144B /* AppView.swift */; };
 		964A7B45238D6D3800E8144B /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B44238D6D3800E8144B /* CheckoutView.swift */; };
+		964A7B47238E31EF00E8144B /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B46238E31EF00E8144B /* FavoriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		964A7B40238D620000E8144B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		964A7B42238D6A5C00E8144B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		964A7B44238D6D3800E8144B /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		964A7B46238E31EF00E8144B /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				964A7B3E238CA4B300E8144B /* ItemDetail.swift */,
 				964A7B40238D620000E8144B /* OrderView.swift */,
 				964A7B42238D6A5C00E8144B /* AppView.swift */,
+				964A7B46238E31EF00E8144B /* FavoriteView.swift */,
 				964A7B26238C726C00E8144B /* Assets.xcassets */,
 				964A7B2B238C726C00E8144B /* LaunchScreen.storyboard */,
 				964A7B36238C736100E8144B /* Menu.swift */,
@@ -178,6 +181,7 @@
 				964A7B45238D6D3800E8144B /* CheckoutView.swift in Sources */,
 				964A7B21238C726800E8144B /* AppDelegate.swift in Sources */,
 				964A7B23238C726800E8144B /* SceneDelegate.swift in Sources */,
+				964A7B47238E31EF00E8144B /* FavoriteView.swift in Sources */,
 				964A7B3D238C9A2C00E8144B /* ItemRow.swift in Sources */,
 				964A7B25238C726800E8144B /* ContentView.swift in Sources */,
 				964A7B3F238CA4B300E8144B /* ItemDetail.swift in Sources */,

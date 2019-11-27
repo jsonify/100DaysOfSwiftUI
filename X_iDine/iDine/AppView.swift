@@ -24,6 +24,12 @@ struct AppView: View {
                     Image(systemName: "square.and.pencil")
                     Text(order.items.count > 0 ? "Cart (\(order.items.count))" : "Cart")
             }
+            
+            FavoriteView()
+                .tabItem {
+                    Image(systemName: "heart")
+                    Text("Favorites")
+            }
         }
     }
 }
