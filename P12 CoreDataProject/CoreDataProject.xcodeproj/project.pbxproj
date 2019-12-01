@@ -16,6 +16,9 @@
 		9642E9672389089E007DD862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9642E9652389089E007DD862 /* LaunchScreen.storyboard */; };
 		9642E97123890906007DD862 /* UnderstandingForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642E97023890906007DD862 /* UnderstandingForEach.swift */; };
 		9642E9732389094C007DD862 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642E9722389094C007DD862 /* Application.swift */; };
+		964A7B732394080F00E8144B /* CreatingNSManagedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B722394080F00E8144B /* CreatingNSManagedObjects.swift */; };
+		964A7B7A239409BD00E8144B /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B78239409BD00E8144B /* Movie+CoreDataClass.swift */; };
+		964A7B7B239409BD00E8144B /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B79239409BD00E8144B /* Movie+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		9642E9682389089E007DD862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9642E97023890906007DD862 /* UnderstandingForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderstandingForEach.swift; sourceTree = "<group>"; };
 		9642E9722389094C007DD862 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		964A7B722394080F00E8144B /* CreatingNSManagedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingNSManagedObjects.swift; sourceTree = "<group>"; };
+		964A7B78239409BD00E8144B /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		964A7B79239409BD00E8144B /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 		9642E95623890897007DD862 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				964A7B78239409BD00E8144B /* Movie+CoreDataClass.swift */,
+				964A7B79239409BD00E8144B /* Movie+CoreDataProperties.swift */,
 				9642E96F238908D5007DD862 /* Fundamentals */,
 				9642E96E238908CE007DD862 /* Main */,
 				9642E95723890897007DD862 /* AppDelegate.swift */,
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				9642E97023890906007DD862 /* UnderstandingForEach.swift */,
+				964A7B722394080F00E8144B /* CreatingNSManagedObjects.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -174,8 +183,11 @@
 				9642E9732389094C007DD862 /* Application.swift in Sources */,
 				9642E95823890897007DD862 /* AppDelegate.swift in Sources */,
 				9642E97123890906007DD862 /* UnderstandingForEach.swift in Sources */,
+				964A7B7B239409BD00E8144B /* Movie+CoreDataProperties.swift in Sources */,
 				9642E95A23890897007DD862 /* SceneDelegate.swift in Sources */,
 				9642E95F23890897007DD862 /* ContentView.swift in Sources */,
+				964A7B732394080F00E8144B /* CreatingNSManagedObjects.swift in Sources */,
+				964A7B7A239409BD00E8144B /* Movie+CoreDataClass.swift in Sources */,
 				9642E95D23890897007DD862 /* CoreDataProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
