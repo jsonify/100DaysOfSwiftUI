@@ -18,6 +18,7 @@ struct ContentView: View {
                     NavigationLink("Creating NSManagedObject subclasses", destination: CreatingNSManagedObjects())
                     NavigationLink("Conditional saving of NSManagedObjectContext", destination: NSManagedObjectContext())
                     NavigationLink("Ensuring Core Data objects are unique using constraints", destination: UsingCoreDataConstraints())
+                    NavigationLink("Filtering @FetchRequest using NSPredicate", destination: FilteringUsingNSPredicate())
                 }
                 
                 Section(header: Text("Main")) {
