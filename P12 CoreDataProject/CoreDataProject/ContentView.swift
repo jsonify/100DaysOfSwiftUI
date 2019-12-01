@@ -16,6 +16,7 @@ struct ContentView: View {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("Why does .self work for ForEach?", destination: UnderstandingForEach())
                     NavigationLink("Creating NSManagedObject subclasses", destination: CreatingNSManagedObjects())
+                    NavigationLink("Conditional saving of NSManagedObjectContext", destination: NSManagedObjectContext())
                 }
                 
                 Section(header: Text("Main")) {
