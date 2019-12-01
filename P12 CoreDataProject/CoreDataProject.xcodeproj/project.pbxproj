@@ -20,6 +20,7 @@
 		964A7B7A239409BD00E8144B /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B78239409BD00E8144B /* Movie+CoreDataClass.swift */; };
 		964A7B7B239409BD00E8144B /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B79239409BD00E8144B /* Movie+CoreDataProperties.swift */; };
 		964A7B7D23940BF200E8144B /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B7C23940BF200E8144B /* NSManagedObjectContext.swift */; };
+		964A7B7F23940DAF00E8144B /* UsingCoreDataConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B7E23940DAF00E8144B /* UsingCoreDataConstraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		964A7B78239409BD00E8144B /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		964A7B79239409BD00E8144B /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		964A7B7C23940BF200E8144B /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		964A7B7E23940DAF00E8144B /* UsingCoreDataConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingCoreDataConstraints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				9642E97023890906007DD862 /* UnderstandingForEach.swift */,
 				964A7B722394080F00E8144B /* CreatingNSManagedObjects.swift */,
 				964A7B7C23940BF200E8144B /* NSManagedObjectContext.swift */,
+				964A7B7E23940DAF00E8144B /* UsingCoreDataConstraints.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				964A7B7B239409BD00E8144B /* Movie+CoreDataProperties.swift in Sources */,
 				9642E95A23890897007DD862 /* SceneDelegate.swift in Sources */,
 				9642E95F23890897007DD862 /* ContentView.swift in Sources */,
+				964A7B7F23940DAF00E8144B /* UsingCoreDataConstraints.swift in Sources */,
 				964A7B732394080F00E8144B /* CreatingNSManagedObjects.swift in Sources */,
 				964A7B7A239409BD00E8144B /* Movie+CoreDataClass.swift in Sources */,
 				9642E95D23890897007DD862 /* CoreDataProject.xcdatamodeld in Sources */,
