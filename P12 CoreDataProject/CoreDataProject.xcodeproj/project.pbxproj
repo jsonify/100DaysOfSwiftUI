@@ -30,6 +30,7 @@
 		964A7B8F2394210E00E8144B /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B8B2394210D00E8144B /* Country+CoreDataProperties.swift */; };
 		964A7B902394210E00E8144B /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B8C2394210D00E8144B /* Candy+CoreDataClass.swift */; };
 		964A7B912394210E00E8144B /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7B8D2394210D00E8144B /* Candy+CoreDataProperties.swift */; };
+		964A7BEC2395572500E8144B /* OneToManyRelationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BEB2395572400E8144B /* OneToManyRelationships.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		964A7B8B2394210D00E8144B /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		964A7B8C2394210D00E8144B /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
 		964A7B8D2394210D00E8144B /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		964A7BEB2395572400E8144B /* OneToManyRelationships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToManyRelationships.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				964A7B802394133C00E8144B /* FilteringUsingNSPredicate.swift */,
 				964A7B822394181800E8144B /* DynamicallyFiltering.swift */,
 				964A7B8823941A3000E8144B /* FilteredList.swift */,
+				964A7BEB2395572400E8144B /* OneToManyRelationships.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				964A7B732394080F00E8144B /* CreatingNSManagedObjects.swift in Sources */,
 				964A7B7A239409BD00E8144B /* Movie+CoreDataClass.swift in Sources */,
 				964A7B902394210E00E8144B /* Candy+CoreDataClass.swift in Sources */,
+				964A7BEC2395572500E8144B /* OneToManyRelationships.swift in Sources */,
 				9642E95D23890897007DD862 /* CoreDataProject.xcdatamodeld in Sources */,
 				964A7B7D23940BF200E8144B /* NSManagedObjectContext.swift in Sources */,
 			);
