@@ -54,7 +54,7 @@ extension CDUser {
         
         public var friendsArray: [CDFriend] {
             let set = friends as? Set<CDFriend> ?? []
-    
+            
             return set.sorted {
                 $0.wrappedName < $1.wrappedName
             }

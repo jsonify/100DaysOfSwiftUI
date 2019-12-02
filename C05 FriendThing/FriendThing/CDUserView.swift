@@ -17,7 +17,7 @@ struct CDUserView: View {
         var matches = [CDUser]()
         
         for friend in user.friendsArray {
-            if let match = cdusers.first(where: { $0.id == friend.id }) {
+            if let match = cdUsers.first(where: { $0.id == friend.id }) {
                 matches.append(match)
             } else {
                 fatalError("Missing \(friend)")
@@ -27,6 +27,33 @@ struct CDUserView: View {
     }
     
     var body: some View {
-        Text(user.wrappedName)
+        Group {
+            VStack {
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .frame(width: 70.0, height: 70.0, alignment: .center)
+                    .foregroundColor(user.isActive ? .green : .gray)
+                Text(user.wrappedName)
+            }
+        .padding()
+            
+            Form {
+                Section(header: Text("Contact")) {
+                    Text(user.wrappedCompany)
+                    Text(user.wrappedAddress)
+                    Text(user.wrappedEmail)
+                }
+                
+                Section(header: Text("About")) {
+                    Text(user.wrappedAbout)
+                }
+                
+                Section(header: Text("Friends")) {
+                    ForEach(friends, id: \.self) { (friend: CDUser) in
+                        Text(friend.wrappedName)
+                    }
+                }
+            }
+        }
     }
 }

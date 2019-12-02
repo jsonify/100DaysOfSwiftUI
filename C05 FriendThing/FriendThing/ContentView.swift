@@ -15,15 +15,15 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(cdUsers, id: \.id) { (user: CDUser) in
-            NavigationLink(destination: CDUserView(user: user)) {
-                HStack {
-                    Image(systemName: "person.circle")
-                        .resizable()
-                        .frame(width: 40.0, height: 40.0)
-                        .foregroundColor(user.isActive ? .green : .gray)
-                    Text(user.wrappedName)
-                        
-                    }
+                NavigationLink(destination: CDUserView(user: user)) {
+                    HStack {
+                        Image(systemName: "person.circle")
+                            .resizable()
+                            .frame(width: 40.0, height: 40.0)
+                            .foregroundColor(user.isActive ? .green : .red)
+                        Text(user.wrappedName)
+                        Text("(\(user.friendsArray.count) friends)")
+                    }.padding(5)
                 }
             }
             .navigationBarTitle("Friends")
@@ -59,6 +59,28 @@ struct ContentView: View {
                                 try self.moc.save()
                             } catch {
                                 print(error.localizedDescription)
+                            }
+                        }
+                        
+                        // Add friends connections
+                        for user in decodedResponse {
+                            guard let cduser = self.cdUsers.first(where: { $0.wrappedId == user.id }) else {
+                                fatalError("User is missing")
+                            }
+                            for friend in user.friends {
+                                if !cduser.friendsArray.contains(where: {$0.wrappedId == friend.id}) {
+                                    let cdFriend = CDFriend(context: self.moc)
+                                    cdFriend.id = friend.id
+                                    cdFriend.name = friend.name
+                                    cduser.addToFriends(cdFriend)
+                                }
+                            }
+                            if self.moc.hasChanges {
+                                do {
+                                    try self.moc.save()
+                                } catch {
+                                    print(error.localizedDescription)
+                                }
                             }
                         }
                     }
