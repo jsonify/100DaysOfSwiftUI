@@ -14,6 +14,13 @@
 		964A7C032395A9C300E8144B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964A7C022395A9C300E8144B /* Assets.xcassets */; };
 		964A7C062395A9C300E8144B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964A7C052395A9C300E8144B /* Preview Assets.xcassets */; };
 		964A7C092395A9C300E8144B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964A7C072395A9C300E8144B /* LaunchScreen.storyboard */; };
+		964A7C162395AC0A00E8144B /* CDUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C142395AC0A00E8144B /* CDUser+CoreDataClass.swift */; };
+		964A7C172395AC0A00E8144B /* CDUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C152395AC0A00E8144B /* CDUser+CoreDataProperties.swift */; };
+		964A7C1A2395AC2400E8144B /* CDFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C182395AC2400E8144B /* CDFriend+CoreDataClass.swift */; };
+		964A7C1B2395AC2400E8144B /* CDFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C192395AC2400E8144B /* CDFriend+CoreDataProperties.swift */; };
+		964A7C1D2395ACDA00E8144B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C1C2395ACDA00E8144B /* User.swift */; };
+		964A7C1F2395AD4400E8144B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C1E2395AD4400E8144B /* Friend.swift */; };
+		964A7C212395ADD400E8144B /* CDUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C202395ADD400E8144B /* CDUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		964A7C052395A9C300E8144B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		964A7C082395A9C300E8144B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		964A7C0A2395A9C300E8144B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964A7C142395AC0A00E8144B /* CDUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		964A7C152395AC0A00E8144B /* CDUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		964A7C182395AC2400E8144B /* CDFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFriend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		964A7C192395AC2400E8144B /* CDFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFriend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		964A7C1C2395ACDA00E8144B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		964A7C1E2395AD4400E8144B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		964A7C202395ADD400E8144B /* CDUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +72,21 @@
 		964A7BF82395A9BF00E8144B /* Friendster */ = {
 			isa = PBXGroup;
 			children = (
+				964A7C182395AC2400E8144B /* CDFriend+CoreDataClass.swift */,
+				964A7C192395AC2400E8144B /* CDFriend+CoreDataProperties.swift */,
+				964A7C142395AC0A00E8144B /* CDUser+CoreDataClass.swift */,
+				964A7C152395AC0A00E8144B /* CDUser+CoreDataProperties.swift */,
 				964A7BF92395A9BF00E8144B /* AppDelegate.swift */,
 				964A7BFB2395A9BF00E8144B /* SceneDelegate.swift */,
 				964A7C002395A9BF00E8144B /* ContentView.swift */,
+				964A7C202395ADD400E8144B /* CDUserView.swift */,
 				964A7C022395A9C300E8144B /* Assets.xcassets */,
 				964A7C072395A9C300E8144B /* LaunchScreen.storyboard */,
 				964A7C0A2395A9C300E8144B /* Info.plist */,
 				964A7BFD2395A9BF00E8144B /* Friendster.xcdatamodeld */,
 				964A7C042395A9C300E8144B /* Preview Content */,
+				964A7C1C2395ACDA00E8144B /* User.swift */,
+				964A7C1E2395AD4400E8144B /* Friend.swift */,
 			);
 			path = Friendster;
 			sourceTree = "<group>";
@@ -150,7 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				964A7BFA2395A9BF00E8144B /* AppDelegate.swift in Sources */,
+				964A7C212395ADD400E8144B /* CDUserView.swift in Sources */,
 				964A7BFF2395A9BF00E8144B /* Friendster.xcdatamodeld in Sources */,
+				964A7C1B2395AC2400E8144B /* CDFriend+CoreDataProperties.swift in Sources */,
+				964A7C162395AC0A00E8144B /* CDUser+CoreDataClass.swift in Sources */,
+				964A7C172395AC0A00E8144B /* CDUser+CoreDataProperties.swift in Sources */,
+				964A7C1D2395ACDA00E8144B /* User.swift in Sources */,
+				964A7C1A2395AC2400E8144B /* CDFriend+CoreDataClass.swift in Sources */,
+				964A7C1F2395AD4400E8144B /* Friend.swift in Sources */,
 				964A7C012395A9BF00E8144B /* ContentView.swift in Sources */,
 				964A7BFC2395A9BF00E8144B /* SceneDelegate.swift in Sources */,
 			);
