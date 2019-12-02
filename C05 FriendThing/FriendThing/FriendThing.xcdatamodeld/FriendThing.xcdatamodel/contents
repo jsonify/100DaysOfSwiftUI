@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="CDFriend" representedClassName="CDFriend" syncable="YES" codeGenerationType="class">
+    <entity name="CDFriend" representedClassName="CDFriend" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="friend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUser" inverseName="friends" inverseEntity="CDUser"/>
     </entity>
     <entity name="CDUser" representedClassName="CDUser" syncable="YES">
         <attribute name="about" optional="YES" attributeType="String"/>
@@ -14,6 +15,7 @@
         <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="registered" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDFriend" inverseName="friend" inverseEntity="CDFriend"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="id"/>
@@ -21,7 +23,7 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="CDUser" positionX="-9" positionY="36" width="128" height="178"/>
-        <element name="CDFriend" positionX="-9" positionY="108" width="128" height="73"/>
+        <element name="CDFriend" positionX="-9" positionY="108" width="128" height="88"/>
+        <element name="CDUser" positionX="-9" positionY="36" width="128" height="193"/>
     </elements>
 </model>

@@ -19,5 +19,13 @@ extension CDFriend {
 
     @NSManaged public var name: String?
     @NSManaged public var id: String?
+    
+    public var wrappedId: String {
+        id ?? "007"
+    }
+    
+    public var wrappedName: String {
+        name ?? "James Bond"
+    }
 
 }
