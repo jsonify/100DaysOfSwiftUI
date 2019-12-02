@@ -17,10 +17,10 @@
 		964A7BDA2394E12800E8144B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BD92394E12800E8144B /* User.swift */; };
 		964A7BDF2394E3A800E8144B /* CDFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BDB2394E3A800E8144B /* CDFriend+CoreDataClass.swift */; };
 		964A7BE02394E3A800E8144B /* CDFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BDC2394E3A800E8144B /* CDFriend+CoreDataProperties.swift */; };
-		964A7BE12394E3A800E8144B /* CDUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BDD2394E3A800E8144B /* CDUser+CoreDataClass.swift */; };
-		964A7BE22394E3A800E8144B /* CDUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BDE2394E3A800E8144B /* CDUser+CoreDataProperties.swift */; };
 		964A7BE42394E63F00E8144B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BE32394E63F00E8144B /* Friend.swift */; };
 		964A7BE62394EF3800E8144B /* CDUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BE52394EF3800E8144B /* CDUserView.swift */; };
+		964A7BE9239554C300E8144B /* CDUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BE7239554C300E8144B /* CDUser+CoreDataClass.swift */; };
+		964A7BEA239554C300E8144B /* CDUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7BE8239554C300E8144B /* CDUser+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +36,10 @@
 		964A7BD92394E12800E8144B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		964A7BDB2394E3A800E8144B /* CDFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFriend+CoreDataClass.swift"; sourceTree = "<group>"; };
 		964A7BDC2394E3A800E8144B /* CDFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDFriend+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		964A7BDD2394E3A800E8144B /* CDUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataClass.swift"; sourceTree = "<group>"; };
-		964A7BDE2394E3A800E8144B /* CDUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		964A7BE32394E63F00E8144B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		964A7BE52394EF3800E8144B /* CDUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUserView.swift; sourceTree = "<group>"; };
+		964A7BE7239554C300E8144B /* CDUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		964A7BE8239554C300E8144B /* CDUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +72,10 @@
 		964A7BC12394E10800E8144B /* FriendThing */ = {
 			isa = PBXGroup;
 			children = (
+				964A7BE7239554C300E8144B /* CDUser+CoreDataClass.swift */,
+				964A7BE8239554C300E8144B /* CDUser+CoreDataProperties.swift */,
 				964A7BDB2394E3A800E8144B /* CDFriend+CoreDataClass.swift */,
 				964A7BDC2394E3A800E8144B /* CDFriend+CoreDataProperties.swift */,
-				964A7BDD2394E3A800E8144B /* CDUser+CoreDataClass.swift */,
-				964A7BDE2394E3A800E8144B /* CDUser+CoreDataProperties.swift */,
 				964A7BE32394E63F00E8144B /* Friend.swift */,
 				964A7BD92394E12800E8144B /* User.swift */,
 				964A7BC22394E10800E8144B /* AppDelegate.swift */,
@@ -170,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964A7BE22394E3A800E8144B /* CDUser+CoreDataProperties.swift in Sources */,
 				964A7BE62394EF3800E8144B /* CDUserView.swift in Sources */,
 				964A7BC32394E10800E8144B /* AppDelegate.swift in Sources */,
 				964A7BE02394E3A800E8144B /* CDFriend+CoreDataProperties.swift in Sources */,
@@ -178,9 +177,10 @@
 				964A7BDF2394E3A800E8144B /* CDFriend+CoreDataClass.swift in Sources */,
 				964A7BCA2394E10800E8144B /* ContentView.swift in Sources */,
 				964A7BDA2394E12800E8144B /* User.swift in Sources */,
+				964A7BEA239554C300E8144B /* CDUser+CoreDataProperties.swift in Sources */,
+				964A7BE9239554C300E8144B /* CDUser+CoreDataClass.swift in Sources */,
 				964A7BE42394E63F00E8144B /* Friend.swift in Sources */,
 				964A7BC82394E10800E8144B /* FriendThing.xcdatamodeld in Sources */,
-				964A7BE12394E3A800E8144B /* CDUser+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

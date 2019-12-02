@@ -2,7 +2,7 @@
 //  CDUser+CoreDataClass.swift
 //  FriendThing
 //
-//  Created by Jason on 12/1/19.
+//  Created by Jason on 12/2/19.
 //  Copyright © 2019 Jason. All rights reserved.
 //
 //
