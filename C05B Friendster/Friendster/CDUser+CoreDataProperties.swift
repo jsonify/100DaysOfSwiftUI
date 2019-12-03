@@ -31,6 +31,28 @@ extension CDUser {
     public var wrappedName: String {
         name ?? "Unknown name"
     }
+    
+    public var wrappedId: String {
+        id ?? "Unknown id"
+    }
+    
+    public var wrappedAbout: String {
+        about ?? ""
+    }
+    
+    public var wrappedAddress: String {
+        address ?? ""
+    }
+    
+    public var wrappedCompany: String {
+        company ?? ""
+    }
+    
+    public var wrappedEmail: String {
+        email ?? ""
+    }
+    
+    
 }
 
 // MARK: Generated accessors for friends

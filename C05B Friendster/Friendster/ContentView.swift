@@ -5,18 +5,28 @@
 //  Created by Jason on 12/2/19.
 //  Copyright © 2019 Jason. All rights reserved.
 //
-
+import CoreData
 import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(entity: CDUser.entity(), sortDescriptors: []) var cdusers: FetchedResults<CDUser>
+    @FetchRequest(entity: CDUser.entity(), sortDescriptors: [], predicate: nil) var cdusers: FetchedResults<CDUser>
     
     var body: some View {
         NavigationView {
-            List(cdusers, id: \.self) { (user: CDUser) in
-                Text(user.wrappedName)
+            List(cdusers, id: \.id) { (user: CDUser) in
+                NavigationLink(destination: CDUserView(user: user)) {
+                    HStack {
+                        Image(systemName: "person.circle")
+                            .resizable()
+                            .frame(width: 40.0, height: 40.0)
+                            .foregroundColor(user.isActive ? .green : .red)
+                        Text(user.wrappedName)
+//                        Text("(\(user.friendsArray.count) friends)")
+                    }.padding(5)
+                }
             }
+        .navigationBarTitle("Friendster")
         }
         .onAppear(perform: loadData)
     }
@@ -32,20 +42,32 @@ struct ContentView: View {
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
                 if let decodedResponse = try? JSONDecoder().decode([User].self, from: data) {
-                    // we have good data – go back to the main thread
                     DispatchQueue.main.async {
-                        // update our UI
+                        //self.users = decodedResponse
                         for user in decodedResponse {
                             let cdUser = CDUser(context: self.moc)
+                            cdUser.id = user.id
                             cdUser.name = user.name
+                            cdUser.isActive = user.isActive
+                            cdUser.email = user.email
+                            cdUser.company = user.company
+                            cdUser.address = user.address
+                            cdUser.about = user.about
+                            cdUser.age = Int16(user.age)
+                        
+                            do {
+                                try self.moc.save()
+                            } catch {
+                                print(error.localizedDescription)
+                            }
                         }
                     }
-
+                    
                     // everything is good, so we can exit
                     return
                 }
             }
-
+            
             // if we're still here it means there was a problem
             print("Fetch failed: \(error?.localizedDescription ?? "Unknown error")")
         }.resume()

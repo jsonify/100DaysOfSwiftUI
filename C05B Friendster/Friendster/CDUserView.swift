@@ -9,13 +9,34 @@
 import SwiftUI
 
 struct CDUserView: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(entity: CDUser.entity(), sortDescriptors: []) var cdusers: FetchedResults<CDUser>
+    
+    let user: CDUser
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct CDUserView_Previews: PreviewProvider {
-    static var previews: some View {
-        CDUserView()
+        Group {
+            VStack {
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .frame(width: 70.0, height: 70.0, alignment: .center)
+                    .foregroundColor(user.isActive ? .green : .red)
+                Text("\(user.age) years old")
+            }
+            .padding()
+            Form {
+                Section(header: Text("Contact")) {
+                    Text(user.wrappedCompany)
+                    Text(user.wrappedAddress)
+                    Text(user.wrappedEmail)
+                }
+                
+                Section(header: Text("Friends")) {
+                    Text("Some people here")
+                }
+            }
+        }
+        .navigationBarTitle(Text(user.wrappedName), displayMode: .inline)
+        
     }
 }
