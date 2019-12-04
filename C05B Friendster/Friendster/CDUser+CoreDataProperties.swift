@@ -52,7 +52,12 @@ extension CDUser {
         email ?? ""
     }
     
-    
+    public var friendsArray: [CDUser] {
+        let set = friends as? Set<CDUser> ?? []
+        return set.sorted {
+            $0.wrappedName < $1.wrappedName
+        }
+    }
 }
 
 // MARK: Generated accessors for friends

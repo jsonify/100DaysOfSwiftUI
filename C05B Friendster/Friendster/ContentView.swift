@@ -22,11 +22,11 @@ struct ContentView: View {
                             .frame(width: 40.0, height: 40.0)
                             .foregroundColor(user.isActive ? .green : .red)
                         Text(user.wrappedName)
-//                        Text("(\(user.friendsArray.count) friends)")
+                        Text("(\(user.friendsArray.count) friends)")
                     }.padding(5)
                 }
             }
-        .navigationBarTitle("Friendster")
+            .navigationBarTitle("Friendster")
         }
         .onAppear(perform: loadData)
     }
@@ -54,11 +54,36 @@ struct ContentView: View {
                             cdUser.address = user.address
                             cdUser.about = user.about
                             cdUser.age = Int16(user.age)
-                        
+                            
                             do {
                                 try self.moc.save()
                             } catch {
                                 print(error.localizedDescription)
+                            }
+                        }
+                        
+                        for user in decodedResponse {
+                            guard let cdUser = self.cdusers.first(where: { $0.wrappedId == user.id }) else {
+                                fatalError("User is missing")
+                            }
+                            
+                            for friend in user.friends {
+                                if !cdUser.friendsArray.contains(where: { $0.wrappedId == friend.id }) {
+                                    let cdFriend = CDFriend(context: self.moc)
+                                    cdFriend.id = friend.id
+                                    cdFriend.name = friend.name
+                                    cdUser.addToFriends(cdFriend)
+                                    
+                                }
+                            }
+                            
+                            if self.moc.hasChanges {
+                                do {
+                                    try self.moc.save()
+                                } catch {
+                                    print(error.localizedDescription)
+                                }
+                                
                             }
                         }
                     }

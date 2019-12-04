@@ -13,6 +13,19 @@ struct CDUserView: View {
     @FetchRequest(entity: CDUser.entity(), sortDescriptors: []) var cdusers: FetchedResults<CDUser>
     
     let user: CDUser
+    var friends: [CDUser] {
+        var matches = [CDUser]()
+        
+        for friend in user.friendsArray {
+            if let match = cdusers.first(where: { $0.id == friend.id}) {
+                matches.append(match)
+            } else {
+                fatalError("Could not find \(friend)")
+            }
+            
+        }
+        return matches
+    }
     
     var body: some View {
         Group {
@@ -32,7 +45,9 @@ struct CDUserView: View {
                 }
                 
                 Section(header: Text("Friends")) {
-                    Text("Some people here")
+                    ForEach(friends, id: \.id) { (friend: CDUser) in
+                        Text(friend.wrappedName)
+                    }
                 }
             }
         }
