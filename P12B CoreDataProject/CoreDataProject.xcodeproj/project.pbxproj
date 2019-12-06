@@ -18,6 +18,7 @@
 		964A7C482398491B00E8144B /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C462398491B00E8144B /* Movie+CoreDataProperties.swift */; };
 		964A7C4B23994C4A00E8144B /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C4923994C4A00E8144B /* Singer+CoreDataClass.swift */; };
 		964A7C4C23994C4A00E8144B /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C4A23994C4A00E8144B /* Singer+CoreDataProperties.swift */; };
+		964A7C4E23994E9800E8144B /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C4D23994E9800E8144B /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		964A7C462398491B00E8144B /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		964A7C4923994C4A00E8144B /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		964A7C4A23994C4A00E8144B /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		964A7C4D23994E9800E8144B /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				964A7C2E2398487200E8144B /* AppDelegate.swift */,
 				964A7C302398487200E8144B /* SceneDelegate.swift */,
 				964A7C352398487200E8144B /* ContentView.swift */,
+				964A7C4D23994E9800E8144B /* FilteredList.swift */,
 				964A7C372398487600E8144B /* Assets.xcassets */,
 				964A7C3C2398487600E8144B /* LaunchScreen.storyboard */,
 				964A7C3F2398487600E8144B /* Info.plist */,
@@ -163,6 +166,7 @@
 			files = (
 				964A7C4B23994C4A00E8144B /* Singer+CoreDataClass.swift in Sources */,
 				964A7C2F2398487200E8144B /* AppDelegate.swift in Sources */,
+				964A7C4E23994E9800E8144B /* FilteredList.swift in Sources */,
 				964A7C312398487200E8144B /* SceneDelegate.swift in Sources */,
 				964A7C362398487200E8144B /* ContentView.swift in Sources */,
 				964A7C472398491B00E8144B /* Movie+CoreDataClass.swift in Sources */,
