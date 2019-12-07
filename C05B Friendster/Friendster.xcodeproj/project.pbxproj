@@ -21,6 +21,9 @@
 		964A7C1D2395ACDA00E8144B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C1C2395ACDA00E8144B /* User.swift */; };
 		964A7C1F2395AD4400E8144B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C1E2395AD4400E8144B /* Friend.swift */; };
 		964A7C212395ADD400E8144B /* CDUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C202395ADD400E8144B /* CDUserView.swift */; };
+		964A7C50239B1FEE00E8144B /* wa_schools.json in Resources */ = {isa = PBXBuildFile; fileRef = 964A7C4F239B1FEE00E8144B /* wa_schools.json */; };
+		964A7C52239B21CA00E8144B /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C51239B21CA00E8144B /* Schools.swift */; };
+		964A7C54239B22A600E8144B /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A7C53239B22A600E8144B /* Bundle-Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		964A7C1C2395ACDA00E8144B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		964A7C1E2395AD4400E8144B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		964A7C202395ADD400E8144B /* CDUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUserView.swift; sourceTree = "<group>"; };
+		964A7C4F239B1FEE00E8144B /* wa_schools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = wa_schools.json; path = ../../Y_Resources/wa_schools.json; sourceTree = "<group>"; };
+		964A7C51239B21CA00E8144B /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
+		964A7C53239B22A600E8144B /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 				964A7BF92395A9BF00E8144B /* AppDelegate.swift */,
 				964A7BFB2395A9BF00E8144B /* SceneDelegate.swift */,
 				964A7C002395A9BF00E8144B /* ContentView.swift */,
+				964A7C4F239B1FEE00E8144B /* wa_schools.json */,
+				964A7C53239B22A600E8144B /* Bundle-Decodable.swift */,
 				964A7C202395ADD400E8144B /* CDUserView.swift */,
 				964A7C022395A9C300E8144B /* Assets.xcassets */,
 				964A7C072395A9C300E8144B /* LaunchScreen.storyboard */,
@@ -87,6 +95,7 @@
 				964A7C042395A9C300E8144B /* Preview Content */,
 				964A7C1C2395ACDA00E8144B /* User.swift */,
 				964A7C1E2395AD4400E8144B /* Friend.swift */,
+				964A7C51239B21CA00E8144B /* Schools.swift */,
 			);
 			path = Friendster;
 			sourceTree = "<group>";
@@ -158,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				964A7C092395A9C300E8144B /* LaunchScreen.storyboard in Resources */,
+				964A7C50239B1FEE00E8144B /* wa_schools.json in Resources */,
 				964A7C062395A9C300E8144B /* Preview Assets.xcassets in Resources */,
 				964A7C032395A9C300E8144B /* Assets.xcassets in Resources */,
 			);
@@ -174,9 +184,11 @@
 				964A7C212395ADD400E8144B /* CDUserView.swift in Sources */,
 				964A7BFF2395A9BF00E8144B /* Friendster.xcdatamodeld in Sources */,
 				964A7C1B2395AC2400E8144B /* CDFriend+CoreDataProperties.swift in Sources */,
+				964A7C54239B22A600E8144B /* Bundle-Decodable.swift in Sources */,
 				964A7C162395AC0A00E8144B /* CDUser+CoreDataClass.swift in Sources */,
 				964A7C172395AC0A00E8144B /* CDUser+CoreDataProperties.swift in Sources */,
 				964A7C1D2395ACDA00E8144B /* User.swift in Sources */,
+				964A7C52239B21CA00E8144B /* Schools.swift in Sources */,
 				964A7C1A2395AC2400E8144B /* CDFriend+CoreDataClass.swift in Sources */,
 				964A7C1F2395AD4400E8144B /* Friend.swift in Sources */,
 				964A7C012395A9BF00E8144B /* ContentView.swift in Sources */,

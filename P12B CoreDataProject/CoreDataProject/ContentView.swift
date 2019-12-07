@@ -13,9 +13,20 @@ struct ContentView: View {
     
     @State private var lastNameFilter = "A"
     
+    let schools: [School] = Bundle.main.decode("wa_schools.json")
+//    let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
+    
     var body: some View {
         VStack {
-            FilteredList(filter: lastNameFilter)
+            List(schools) { school in
+                HStack {
+                    NavigationLink(desitination: SchoolView(schoolInfo: [SchoolView.SchoolInfo]))
+                    Text(school.schoolName)
+                    Spacer()
+                    Text("\(school.schoolLevel) school")
+                        .font(.subheadline)
+                }
+            }
             
             Button("Add Examples") {
                 let taylor = Singer(context: self.moc)
@@ -32,14 +43,14 @@ struct ContentView: View {
                 
                 try? self.moc.save()
             }
-            
-            Button("Show A") {
-                self.lastNameFilter = "A"
-            }
-            
-            Button("Show S") {
-                self.lastNameFilter = "S"
-            }
+//
+//            Button("Show A") {
+//                self.lastNameFilter = "A"
+//            }
+//
+//            Button("Show S") {
+//                self.lastNameFilter = "S"
+//            }
         }
     }
 }
