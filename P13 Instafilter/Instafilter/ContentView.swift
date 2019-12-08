@@ -14,7 +14,7 @@ struct ContentView: View {
             List {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("How property wrappers become structs", destination: PropertyWrappersStructs())
-                    
+                    NavigationLink("Creating custom bindings in SwiftUI", destination: CustomBindings())
                 }
                 
                 Section(header: Text("Main")) {
