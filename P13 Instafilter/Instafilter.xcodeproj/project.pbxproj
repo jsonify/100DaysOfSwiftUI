@@ -16,6 +16,7 @@
 		96AB6408239CB13400B2ECDD /* PropertyWrappersStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB6407239CB13400B2ECDD /* PropertyWrappersStructs.swift */; };
 		96AB640A239CB14400B2ECDD /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB6409239CB14400B2ECDD /* Application.swift */; };
 		96AB640C239CB4E900B2ECDD /* CustomBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB640B239CB4E900B2ECDD /* CustomBindings.swift */; };
+		96AB640E239CB79A00B2ECDD /* MultipleOptionsActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB640D239CB79A00B2ECDD /* MultipleOptionsActionSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		96AB6407239CB13400B2ECDD /* PropertyWrappersStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappersStructs.swift; sourceTree = "<group>"; };
 		96AB6409239CB14400B2ECDD /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		96AB640B239CB4E900B2ECDD /* CustomBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBindings.swift; sourceTree = "<group>"; };
+		96AB640D239CB79A00B2ECDD /* MultipleOptionsActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionsActionSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				96AB6407239CB13400B2ECDD /* PropertyWrappersStructs.swift */,
 				96AB640B239CB4E900B2ECDD /* CustomBindings.swift */,
+				96AB640D239CB79A00B2ECDD /* MultipleOptionsActionSheet.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				96AB6408239CB13400B2ECDD /* PropertyWrappersStructs.swift in Sources */,
 				96AB63F4239CB09C00B2ECDD /* SceneDelegate.swift in Sources */,
 				96AB640C239CB4E900B2ECDD /* CustomBindings.swift in Sources */,
+				96AB640E239CB79A00B2ECDD /* MultipleOptionsActionSheet.swift in Sources */,
 				96AB63F6239CB09C00B2ECDD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
