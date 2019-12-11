@@ -12,6 +12,9 @@ struct Application: View {
     @State private var image: Image?
     @State private var filterIntensity = 0.5
     
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -30,7 +33,7 @@ struct Application: View {
                     }
                 }
                 .onTapGesture {
-                    // select an image
+                    self.showingImagePicker = true
                 }
                 
                 HStack {
@@ -53,7 +56,18 @@ struct Application: View {
             }
             .padding([.horizontal, .bottom])
             .navigationBarTitle("InstantFilter")
+            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                ImagePicker(image: self.$inputImage)
+            }
         }
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
+//
+//        let imageSaver = ImageSaver()
+//        imageSaver.writeToPhotoAlbum(image: inputImage)
     }
 }
 
