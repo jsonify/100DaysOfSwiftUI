@@ -15,9 +15,9 @@ struct Application: View {
     @State private var filterIntensity = 0.5
     
     @State private var showingFilterSheet = false
-    
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
+    @State private var processedImage: UIImage?
     
     @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
     let context = CIContext()
@@ -67,7 +67,18 @@ struct Application: View {
                     Spacer()
                     
                     Button("Save") {
-                        // save the picture
+                        guard let processedImage = self.processedImage else { return }
+                        
+                        let imageSaver = ImageSaver()
+                        imageSaver.writeToPhotoAlbum(image: processedImage)
+                        
+                        imageSaver.successHandler = {
+                            print("Success!")
+                        }
+                        
+                        imageSaver.errorHandler = {
+                            print("Oops: \($0.localizedDescription)")
+                        }
                     }
                 }
             }
@@ -99,9 +110,7 @@ struct Application: View {
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
         
         applyProcessing()
-//
-//        let imageSaver = ImageSaver()
-//        imageSaver.writeToPhotoAlbum(image: inputImage)
+
     }
     
     func applyProcessing() {
@@ -121,6 +130,7 @@ struct Application: View {
         if let cgimg  = context.createCGImage(outputImage, from: outputImage.extent) {
             let uiImage = UIImage(cgImage: cgimg)
             image = Image(uiImage: uiImage)
+            processedImage = uiImage
         }
     }
     

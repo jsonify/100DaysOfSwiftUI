@@ -7,16 +7,16 @@
 //
 
 import SwiftUI
-
-class ImageSaver: NSObject {
-    func writeToPhotoAlbum(image: UIImage) {
-        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveError), nil)
-    }
-    
-    @objc func saveError(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        print("Save finished")
-    }
-}
+// Added via a new class
+//class ImageSaver: NSObject {
+//    func writeToPhotoAlbum(image: UIImage) {
+//        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveError), nil)
+//    }
+//
+//    @objc func saveError(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+//        print("Save finished")
+//    }
+//}
 
 /*
  use UIViewControllerRepresentable to wrap a UIKit view controller so that it can be used inside SwiftUI, in particular focusing on UIImagePickerController
