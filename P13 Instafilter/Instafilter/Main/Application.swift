@@ -13,6 +13,7 @@ import SwiftUI
 struct Application: View {
     @State private var image: Image?
     @State private var filterIntensity = 0.5
+    @State private var filterRadius = 100
     
     @State private var showingFilterSheet = false
     @State private var showingImagePicker = false
@@ -35,11 +36,21 @@ struct Application: View {
         let intensity = Binding<Double> (
             get: {
                 self.filterIntensity
-        },
+            },
             set: {
                 self.filterIntensity = $0
                 self.applyProcessing()
-        }
+            }
+        )
+        
+        let radius = Binding<Int> (
+            get: {
+                self.filterRadius
+            },
+            set: {
+                self.filterRadius = $0
+                self.applyProcessing()
+            }
         )
         
         return NavigationView {
@@ -65,6 +76,12 @@ struct Application: View {
                 HStack {
                     Text("Intensity")
                     Slider(value: intensity)
+                        .padding(.vertical)
+                }
+                
+                HStack {
+                    Text("Radius")
+                    Slider(value: radius)
                         .padding(.vertical)
                 }
                 
@@ -139,7 +156,7 @@ struct Application: View {
             currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)
         }
         if inputKeys.contains(kCIInputRadiusKey) {
-            currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey)
+            currentFilter.setValue(filterRadius, forKey: kCIInputRadiusKey)
         }
         if inputKeys.contains(kCIInputScaleKey) {
             currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey)
