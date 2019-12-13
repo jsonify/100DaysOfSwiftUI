@@ -19,6 +19,15 @@ struct Application: View {
     @State private var inputImage: UIImage?
     @State private var processedImage: UIImage?
     
+    // Challenge 1
+    @State private var imageHasBeenLoaded = false
+    @State private var showingImageAlert = false
+    
+    // Challenge 2
+    var filterName: String {
+        return "\(currentFilter.name)"
+    }
+    
     @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
     let context = CIContext()
     
@@ -26,11 +35,11 @@ struct Application: View {
         let intensity = Binding<Double> (
             get: {
                 self.filterIntensity
-            },
+        },
             set: {
                 self.filterIntensity = $0
                 self.applyProcessing()
-            }
+        }
         )
         
         return NavigationView {
@@ -60,24 +69,29 @@ struct Application: View {
                 }
                 
                 HStack {
-                    Button("Change Filter") {
+                    Button("\(filterName)") {
                         self.showingFilterSheet = true
                     }
                     
                     Spacer()
                     
                     Button("Save") {
-                        guard let processedImage = self.processedImage else { return }
-                        
-                        let imageSaver = ImageSaver()
-                        imageSaver.writeToPhotoAlbum(image: processedImage)
-                        
-                        imageSaver.successHandler = {
-                            print("Success!")
-                        }
-                        
-                        imageSaver.errorHandler = {
-                            print("Oops: \($0.localizedDescription)")
+                        // Challenge 1
+                        if self.imageHasBeenLoaded {
+                            guard let processedImage = self.processedImage else { return }
+                            
+                            let imageSaver = ImageSaver()
+                            imageSaver.writeToPhotoAlbum(image: processedImage)
+                            
+                            imageSaver.successHandler = {
+                                print("Success!")
+                            }
+                            
+                            imageSaver.errorHandler = {
+                                print("Oops: \($0.localizedDescription)")
+                            }
+                        } else {
+                            self.showingImageAlert = true
                         }
                     }
                 }
@@ -86,6 +100,9 @@ struct Application: View {
             .navigationBarTitle("InstantFilter")
             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                 ImagePicker(image: self.$inputImage)
+            }
+            .alert(isPresented: $showingImageAlert) {
+                Alert(title: Text("Oops."), message: Text("No image was available to save"), dismissButton: .default(Text("OK")))
             }
             .actionSheet(isPresented: $showingFilterSheet) {
                 ActionSheet(title: Text("Select a filter"), buttons: [
@@ -107,10 +124,13 @@ struct Application: View {
         image = Image(uiImage: inputImage)
         
         let beginImage = CIImage(image: inputImage)
+        
+        self.imageHasBeenLoaded = true
+        
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
         
         applyProcessing()
-
+        
     }
     
     func applyProcessing() {
