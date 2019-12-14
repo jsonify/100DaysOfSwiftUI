@@ -14,6 +14,8 @@ struct ContentView: View {
             List {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("Comparable for custom types", destination: UsingComparable())
+                    NavigationLink("Writing data to the documents directory", destination: WritingDataToDocumentsDir())
+                    NavigationLink("Writing data to the documents directory", destination: WritingDataToDocumentsDir())
                 }
                 
                 Section(header: Text("Application")) {

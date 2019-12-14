@@ -15,6 +15,8 @@
 		96C151D523A3CABC0038B059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C151D323A3CABC0038B059 /* LaunchScreen.storyboard */; };
 		96C151DF23A3CB550038B059 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151DE23A3CB550038B059 /* Application.swift */; };
 		96C151E123A3CB720038B059 /* UsingComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151E023A3CB720038B059 /* UsingComparable.swift */; };
+		96C151E323A3E1C70038B059 /* WritingDataToDocumentsDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151E223A3E1C70038B059 /* WritingDataToDocumentsDir.swift */; };
+		96C151E523A45A2B0038B059 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151E423A45A2B0038B059 /* FileManager-DocumentsDirectory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		96C151D623A3CABC0038B059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96C151DE23A3CB550038B059 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		96C151E023A3CB720038B059 /* UsingComparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingComparable.swift; sourceTree = "<group>"; };
+		96C151E223A3E1C70038B059 /* WritingDataToDocumentsDir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingDataToDocumentsDir.swift; sourceTree = "<group>"; };
+		96C151E423A45A2B0038B059 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				96C151E023A3CB720038B059 /* UsingComparable.swift */,
+				96C151E223A3E1C70038B059 /* WritingDataToDocumentsDir.swift */,
+				96C151E423A45A2B0038B059 /* FileManager-DocumentsDirectory.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -169,9 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96C151DF23A3CB550038B059 /* Application.swift in Sources */,
+				96C151E523A45A2B0038B059 /* FileManager-DocumentsDirectory.swift in Sources */,
 				96C151E123A3CB720038B059 /* UsingComparable.swift in Sources */,
 				96C151C923A3CAB70038B059 /* AppDelegate.swift in Sources */,
 				96C151CB23A3CAB80038B059 /* SceneDelegate.swift in Sources */,
+				96C151E323A3E1C70038B059 /* WritingDataToDocumentsDir.swift in Sources */,
 				96C151CD23A3CAB80038B059 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
