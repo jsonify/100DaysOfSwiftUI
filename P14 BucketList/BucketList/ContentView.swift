@@ -15,7 +15,8 @@ struct ContentView: View {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("Comparable for custom types", destination: UsingComparable())
                     NavigationLink("Writing data to the documents directory", destination: WritingDataToDocumentsDir())
-                    NavigationLink("Writing data to the documents directory", destination: WritingDataToDocumentsDir())
+                    NavigationLink("Switching view states with enums", destination: SwitchingViewsWithEnumStates())
+                    NavigationLink("Integrating MapKit with SwiftUI ", destination: IntegratingMapKit())
                 }
                 
                 Section(header: Text("Application")) {
