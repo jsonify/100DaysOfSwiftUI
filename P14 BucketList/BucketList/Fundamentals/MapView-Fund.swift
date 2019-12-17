@@ -51,7 +51,7 @@ struct MapViewFund: UIViewRepresentable {
     
 }
 
-struct MapView_Previews: PreviewProvider {
+struct MapViewFund_Previews: PreviewProvider {
     static var previews: some View {
         MapViewFund()
     }

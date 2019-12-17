@@ -18,6 +18,7 @@ struct ContentView: View {
                     NavigationLink("Switching view states with enums", destination: SwitchingViewsWithEnumStates())
                     NavigationLink("Integrating MapKit with SwiftUI ", destination: IntegratingMapKit())
                     NavigationLink("Using Touch ID and Face ID with SwiftUI", destination: TouchIDFaceID())
+                    NavigationLink("Advanced MKMapView with SwiftUI", destination: AdvancedMapKit())
                 }
                 
                 Section(header: Text("Application")) {
