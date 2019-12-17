@@ -17,6 +17,7 @@ struct ContentView: View {
                     NavigationLink("Writing data to the documents directory", destination: WritingDataToDocumentsDir())
                     NavigationLink("Switching view states with enums", destination: SwitchingViewsWithEnumStates())
                     NavigationLink("Integrating MapKit with SwiftUI ", destination: IntegratingMapKit())
+                    NavigationLink("Using Touch ID and Face ID with SwiftUI", destination: TouchIDFaceID())
                 }
                 
                 Section(header: Text("Application")) {

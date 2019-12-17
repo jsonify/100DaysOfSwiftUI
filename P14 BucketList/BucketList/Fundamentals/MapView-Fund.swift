@@ -9,15 +9,15 @@
 import MapKit
 import SwiftUI
 
-struct MapView: UIViewRepresentable {
-    func makeCoordinator() -> MapView.Coordinator {
+struct MapViewFund: UIViewRepresentable {
+    func makeCoordinator() -> MapViewFund.Coordinator {
         Coordinator(self)
     }
     
     class Coordinator: NSObject, MKMapViewDelegate {
-        var parent: MapView
+        var parent: MapViewFund
         
-        init(_ parent: MapView) {
+        init(_ parent: MapViewFund) {
             self.parent = parent
         }
         
@@ -53,6 +53,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapViewFund()
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct IntegratingMapKit: View {
     var body: some View {
-        MapView()
+        MapViewFund()
             .edgesIgnoringSafeArea(.all)
     }
 }
