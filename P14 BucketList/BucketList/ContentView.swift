@@ -22,7 +22,7 @@ struct ContentView: View {
                 }
                 
                 Section(header: Text("Application")) {
-                    NavigationLink("BucketList", destination: Application())
+                    NavigationLink("BucketList", destination: AdvancedMapKit())
                 }
             }
         .navigationBarTitle("P14 - Bucket List")

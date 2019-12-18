@@ -12,6 +12,8 @@
 		963242D623A91C8400F5CB78 /* AdvancedMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963242D523A91C8400F5CB78 /* AdvancedMapKit.swift */; };
 		963242D823A9995400F5CB78 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963242D723A9995400F5CB78 /* MKPointAnnotation-ObservableObject.swift */; };
 		963242DA23A9DF0D00F5CB78 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963242D923A9DF0D00F5CB78 /* EditView.swift */; };
+		963242DC23AA63C900F5CB78 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963242DB23AA63C900F5CB78 /* Result.swift */; };
+		9632430023AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963242FF23AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift */; };
 		96C151C923A3CAB70038B059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151C823A3CAB70038B059 /* AppDelegate.swift */; };
 		96C151CB23A3CAB80038B059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151CA23A3CAB80038B059 /* SceneDelegate.swift */; };
 		96C151CD23A3CAB80038B059 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151CC23A3CAB80038B059 /* ContentView.swift */; };
@@ -33,6 +35,8 @@
 		963242D523A91C8400F5CB78 /* AdvancedMapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMapKit.swift; sourceTree = "<group>"; };
 		963242D723A9995400F5CB78 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
 		963242D923A9DF0D00F5CB78 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		963242DB23AA63C900F5CB78 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		963242FF23AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 		96C151C523A3CAB70038B059 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C151C823A3CAB70038B059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96C151CA23A3CAB80038B059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +71,9 @@
 				963242D323A9131B00F5CB78 /* MapView.swift */,
 				963242D723A9995400F5CB78 /* MKPointAnnotation-ObservableObject.swift */,
 				963242D923A9DF0D00F5CB78 /* EditView.swift */,
+				963242FF23AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift */,
 				963242D523A91C8400F5CB78 /* AdvancedMapKit.swift */,
+				963242DB23AA63C900F5CB78 /* Result.swift */,
 			);
 			path = AdvMapView;
 			sourceTree = "<group>";
@@ -212,9 +218,11 @@
 				96C151E523A45A2B0038B059 /* FileManager-DocumentsDirectory.swift in Sources */,
 				96C151E123A3CB720038B059 /* UsingComparable.swift in Sources */,
 				963242D123A8976400F5CB78 /* TouchIDFaceID.swift in Sources */,
+				963242DC23AA63C900F5CB78 /* Result.swift in Sources */,
 				96C151C923A3CAB70038B059 /* AppDelegate.swift in Sources */,
 				96C151CB23A3CAB80038B059 /* SceneDelegate.swift in Sources */,
 				96C151E323A3E1C70038B059 /* WritingDataToDocumentsDir.swift in Sources */,
+				9632430023AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift in Sources */,
 				963242D823A9995400F5CB78 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				963242D623A91C8400F5CB78 /* AdvancedMapKit.swift in Sources */,
 				963242DA23A9DF0D00F5CB78 /* EditView.swift in Sources */,
