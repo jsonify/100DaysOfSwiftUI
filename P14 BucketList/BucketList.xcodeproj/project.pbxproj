@@ -14,6 +14,7 @@
 		963242DA23A9DF0D00F5CB78 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963242D923A9DF0D00F5CB78 /* EditView.swift */; };
 		963242DC23AA63C900F5CB78 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963242DB23AA63C900F5CB78 /* Result.swift */; };
 		9632430023AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963242FF23AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift */; };
+		9662E29023AAF178008D8C7B /* AnnotatedMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662E28F23AAF178008D8C7B /* AnnotatedMapView.swift */; };
 		96C151C923A3CAB70038B059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151C823A3CAB70038B059 /* AppDelegate.swift */; };
 		96C151CB23A3CAB80038B059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151CA23A3CAB80038B059 /* SceneDelegate.swift */; };
 		96C151CD23A3CAB80038B059 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C151CC23A3CAB80038B059 /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 		963242D923A9DF0D00F5CB78 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		963242DB23AA63C900F5CB78 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		963242FF23AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
+		9662E28F23AAF178008D8C7B /* AnnotatedMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedMapView.swift; sourceTree = "<group>"; };
 		96C151C523A3CAB70038B059 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C151C823A3CAB70038B059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96C151CA23A3CAB80038B059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				963242D323A9131B00F5CB78 /* MapView.swift */,
+				9662E28F23AAF178008D8C7B /* AnnotatedMapView.swift */,
 				963242D723A9995400F5CB78 /* MKPointAnnotation-ObservableObject.swift */,
 				963242D923A9DF0D00F5CB78 /* EditView.swift */,
 				963242FF23AAD75E00F5CB78 /* MKPointAnnotation-Codable.swift */,
@@ -228,6 +231,7 @@
 				963242DA23A9DF0D00F5CB78 /* EditView.swift in Sources */,
 				96C151ED23A595AF0038B059 /* MapView-Fund.swift in Sources */,
 				96C151CD23A3CAB80038B059 /* ContentView.swift in Sources */,
+				9662E29023AAF178008D8C7B /* AnnotatedMapView.swift in Sources */,
 				96C151E923A460B70038B059 /* IntegratingMapKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

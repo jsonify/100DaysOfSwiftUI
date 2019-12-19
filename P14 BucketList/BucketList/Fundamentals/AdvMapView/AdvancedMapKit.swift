@@ -11,48 +11,20 @@ import MapKit
 import SwiftUI
 
 struct AdvancedMapKit: View {
-    @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [CodableMKPointAnnotation]()
     @State private var selectedPlace: MKPointAnnotation?
-    @State private var showingPlaceDetails = false
     @State private var showingEditScreen = false
     @State private var isUnlocked = false
+    
+    // Challenge 3
+    @State private var showingAuthError = false
+    
+    @State private var authErrorMessage = ""
     
     var body: some View {
         ZStack {
             if isUnlocked {
-                MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
-                    .edgesIgnoringSafeArea(.all)
-                Circle()
-                    .fill(Color.blue)
-                    .opacity(0.3)
-                    .frame(width: 32, height: 32)
-                
-                VStack {
-                    Spacer()
-                    
-                    HStack {
-                        Spacer()
-                        
-                        Button(action: {
-                            let newLocation = CodableMKPointAnnotation()
-                            newLocation.title = "Example Location"
-                            newLocation.coordinate = self.centerCoordinate
-                            self.locations.append(newLocation)
-                            
-                            self.selectedPlace = newLocation
-                            self.showingEditScreen = true
-                        }) {
-                            Image(systemName: "plus")
-                                .padding()
-                                .background(Color.black.opacity(0.75))
-                                .foregroundColor(.white)
-                                .font(.title)
-                                .clipShape(Circle())
-                                .padding(.trailing)
-                        }
-                    }
-                }
+                AnnotatedMapView(selectedPlace: $selectedPlace, showingEditScreen: $showingEditScreen, annotations: $locations)
             } else {
                 Button("Unlock Places") {
                     self.authenticate()
@@ -63,11 +35,9 @@ struct AdvancedMapKit: View {
                 .clipShape(Capsule())
             }
         }
-        .alert(isPresented: $showingPlaceDetails) {
-            Alert(title: Text(selectedPlace?.title ?? "Unknown"), message: Text(selectedPlace?.subtitle ?? "Missing Place Information"), primaryButton: .default(Text("Ok")), secondaryButton: .default(Text("Edit")) {
-                self.showingEditScreen = true
-                }
-            )
+        .alert(isPresented: $showingAuthError) {
+            //write auth error
+            Alert(title: Text("Authorization Error"), message: Text(authErrorMessage), dismissButton: .default(Text("Ok")))
         }
         .sheet(isPresented: $showingEditScreen, onDismiss: saveData) {
             if self.selectedPlace != nil {
@@ -117,11 +87,15 @@ struct AdvancedMapKit: View {
                         self.isUnlocked = true
                     } else {
                         // there was a problem
+                        self.authErrorMessage = "Sorry, you're not recognized"
+                        self.showingAuthError = true
                     }
                 }
             }
         } else {
             // no biometrics
+            self.authErrorMessage = "Whoops, no biometrics were found."
+            self.showingAuthError = true
         }
     }
 }
