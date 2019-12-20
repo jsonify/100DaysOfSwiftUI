@@ -38,9 +38,15 @@ struct ContentView: View {
 // Challenge 3
                 Form {
                     Section(header: Text("Score: \(score)")) {
-                        List(usedWords, id: \.self) {
-                            Image(systemName: "\($0.count).circle")
-                            Text($0)
+                        // Fixing Word Scramble from P15 - Accessibility
+                        // make both those items a single group where the children are ignored by VoiceOver, then add a label for the whole group that contains a much more natural description
+                        List(usedWords, id: \.self) { word in
+                            HStack {
+                                Image(systemName: "\(word.count).circle")
+                                Text(word)
+                            }
+                            .accessibilityElement(children: .ignore)
+                        .accessibility(label: Text("\(word), \(word.count) letters"))
                         }
                     }
                 }
