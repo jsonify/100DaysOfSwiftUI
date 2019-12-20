@@ -11,7 +11,8 @@ import SwiftUI
 struct HidingGroupingAccessibilityData: View {
     var body: some View {
         ZStack {
-            Image(decorative: "jsnProfilePicture")
+            VStack {
+                Image(decorative: "jsnProfilePicture")
                 .accessibility(hidden: true)
                 VStack {
                     Text("Your score is")
@@ -20,6 +21,7 @@ struct HidingGroupingAccessibilityData: View {
                 }
                 .accessibilityElement(children: .ignore)
                 .accessibility(label: Text("Your score is 1000"))
+            }
         }
     }
 }

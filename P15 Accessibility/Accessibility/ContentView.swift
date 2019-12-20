@@ -15,6 +15,7 @@ struct ContentView: View {
                 Section(header: Text("Fundamentals")) {
                     NavigationLink("Identifying views with useful labels", destination: IdentitfyingWithUsefulLabels())
                     NavigationLink("Hiding and grouping accessibility data", destination: HidingGroupingAccessibilityData())
+                    NavigationLink("Reading the value of controls", destination: ReadingValueOfControls())
                 }
                 
                 Section(header: Text("Application")) {

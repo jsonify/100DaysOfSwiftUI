@@ -16,6 +16,7 @@
 		9662E2B423ABBF21008D8C7B /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662E2B323ABBF21008D8C7B /* Application.swift */; };
 		9662E2B623ABBF57008D8C7B /* IdentitfyingWithUsefulLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662E2B523ABBF57008D8C7B /* IdentitfyingWithUsefulLabels.swift */; };
 		9662E2B823ABC3D2008D8C7B /* HidingGroupingAccessibilityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662E2B723ABC3D2008D8C7B /* HidingGroupingAccessibilityData.swift */; };
+		9662E2BA23AD082B008D8C7B /* ReadingValueOfControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662E2B923AD082A008D8C7B /* ReadingValueOfControls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9662E2B323ABBF21008D8C7B /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		9662E2B523ABBF57008D8C7B /* IdentitfyingWithUsefulLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentitfyingWithUsefulLabels.swift; sourceTree = "<group>"; };
 		9662E2B723ABC3D2008D8C7B /* HidingGroupingAccessibilityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidingGroupingAccessibilityData.swift; sourceTree = "<group>"; };
+		9662E2B923AD082A008D8C7B /* ReadingValueOfControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingValueOfControls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				9662E2B523ABBF57008D8C7B /* IdentitfyingWithUsefulLabels.swift */,
 				9662E2B723ABC3D2008D8C7B /* HidingGroupingAccessibilityData.swift */,
+				9662E2B923AD082A008D8C7B /* ReadingValueOfControls.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9662E2B823ABC3D2008D8C7B /* HidingGroupingAccessibilityData.swift in Sources */,
+				9662E2BA23AD082B008D8C7B /* ReadingValueOfControls.swift in Sources */,
 				9662E2B423ABBF21008D8C7B /* Application.swift in Sources */,
 				9662E2B623ABBF57008D8C7B /* IdentitfyingWithUsefulLabels.swift in Sources */,
 				9662E29E23ABBE8C008D8C7B /* AppDelegate.swift in Sources */,
