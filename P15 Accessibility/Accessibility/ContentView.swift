@@ -22,7 +22,7 @@ struct ContentView: View {
                     NavigationLink("Accessibility App", destination: Application())
                 }
             }
-        .navigationBarTitle("P14 - Bucket List")
+        .navigationBarTitle("P15 - Accessibility")
         }
     }
 }
