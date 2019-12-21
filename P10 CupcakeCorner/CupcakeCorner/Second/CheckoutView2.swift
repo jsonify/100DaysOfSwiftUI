@@ -26,6 +26,10 @@ struct CheckoutView2: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: geo.size.width)
+                        /* P15 - Challenge 1
+                        The check out view in Cupcake Corner uses an image that doesn’t add anything to the UI, so find a way to make the screenreader not read it out.
+                        */
+                        .accessibility(removeTraits: .isImage)
                     
                     Text("Your order costs: $\(self.order.orderInfo.cost, specifier: "%.2f")")
                         .font(.title)
