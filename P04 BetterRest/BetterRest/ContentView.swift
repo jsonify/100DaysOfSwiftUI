@@ -64,6 +64,10 @@ struct ContentView: View {
                     Stepper(value: $sleepAmount, in: 4...12, step: 0.25) {
                         Text("\(sleepAmount, specifier: "%g") hours")
                     }
+                        /* P15 - Challenge 2
+                        Fix the steppers in BetterRest so that they read out useful information when the user adjusts their values.
+                        */
+                .accessibility(value: Text("\(sleepAmount) hours"))
                 }
                 Section(header: Text("Daily coffee intake")) {
 //                VStack(alignment: .leading, spacing: 0) {
