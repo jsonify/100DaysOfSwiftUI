@@ -40,6 +40,14 @@ struct RatingView: View {
                     .onTapGesture {
                         self.rating = number
                 }
+                // Fixing Bookworm from P15 - Accessibility
+                // add a meaningful label for each star
+                .accessibility(label: Text("\(number == 1 ? "1 star" : "\(number) stars")"))
+                // remove the .isImage trait, because it really doesn’t matter that these are images
+                .accessibility(removeTraits: .isImage)
+                // tell the system that each star is actually a button, so users know it can be tapped.
+                // And make VoiceOver do an even better job by adding a second trait, .isSelected, if the star is already highlighted.
+                .accessibility(addTraits: number > 1 ? .isButton : [.isButton, .isSelected])
             }
         }
     }
