@@ -15,6 +15,8 @@
 		967F8F6C23B569550003A065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967F8F6A23B569550003A065 /* LaunchScreen.storyboard */; };
 		967F8F7623B569E60003A065 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F7523B569E60003A065 /* Application.swift */; };
 		967F8F7823B56A0B0003A065 /* UsingEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F7723B56A0B0003A065 /* UsingEnvironmentObject.swift */; };
+		967F8F7A23B56E110003A065 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F7923B56E110003A065 /* User.swift */; };
+		967F8F7C23B570960003A065 /* CreatingTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F7B23B570960003A065 /* CreatingTabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		967F8F6D23B569550003A065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967F8F7523B569E60003A065 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		967F8F7723B56A0B0003A065 /* UsingEnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingEnvironmentObject.swift; sourceTree = "<group>"; };
+		967F8F7923B56E110003A065 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		967F8F7B23B570960003A065 /* CreatingTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingTabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				967F8F7723B56A0B0003A065 /* UsingEnvironmentObject.swift */,
+				967F8F7923B56E110003A065 /* User.swift */,
+				967F8F7B23B570960003A065 /* CreatingTabs.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -168,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967F8F7C23B570960003A065 /* CreatingTabs.swift in Sources */,
 				967F8F7623B569E60003A065 /* Application.swift in Sources */,
 				967F8F6023B569500003A065 /* AppDelegate.swift in Sources */,
+				967F8F7A23B56E110003A065 /* User.swift in Sources */,
 				967F8F7823B56A0B0003A065 /* UsingEnvironmentObject.swift in Sources */,
 				967F8F6223B569500003A065 /* SceneDelegate.swift in Sources */,
 				967F8F6423B569500003A065 /* ContentView.swift in Sources */,
