@@ -12,7 +12,11 @@ struct AddContactView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var contacts: Contacts
     
+    @State private var image: Image?
+    @State private var inputImage: UIImage?
     @State private var name = ""
+    @State private var showingImagePicker = false
+    @State private var showingImageNameAlert = false
     
     private var disableSave: Bool {
         name == ""
@@ -20,13 +24,39 @@ struct AddContactView: View {
     
     var body: some View {
         NavigationView {
-            Form {
-                TextField("Name", text: $name)
+            VStack {
+                ZStack {
+                    Rectangle()
+                        .fill(Color.secondary)
+                    
+                    if image != nil {
+                        image?
+                        .resizable()
+                        .scaledToFit()
+                        
+                    } else {
+                        Text("Tap to select a picture")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                        
+                    }
+                }
+                .onTapGesture {
+                    self.showingImagePicker = true
+                }
+                Spacer()
+                
+                Text("\(name)")
+            }
+            .alert(isPresented: $showingImageNameAlert) {
+                Alert(title: Text("Boom"), message: Text("That worked"), dismissButton: .default(Text("Ok")))
             }
             .navigationBarTitle("Add new Contact")
+            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                ImagePicker(image: self.$inputImage)
+            }
             .navigationBarItems(
                 trailing: Button("Save") {
-                    self.validateContact()
                     self.presentationMode.wrappedValue.dismiss()
                 }
                 .disabled(disableSave)
@@ -34,13 +64,25 @@ struct AddContactView: View {
         }
     }
     
-    func validateContact() {
-        guard name != "" else {
-            return
-        }
-        let contact = Contact(name: name)
-        contacts.items.append(contact)
+    func addName() {
+        print("Boom")
+        
     }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
+//        self.showingImageNameAlert = true
+        addName()
+    }
+    
+    //    func validateContact() {
+    //        guard name != "" else {
+    //            return
+    //        }
+    //        let contact = Contact(name: name)
+    //        contacts.items.append(contact)
+    //    }
 }
 
 struct AddContactView_Previews: PreviewProvider {

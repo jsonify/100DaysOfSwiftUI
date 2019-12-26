@@ -17,6 +17,7 @@
 		967F8F4C23B178F80003A065 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F4B23B178F80003A065 /* Contacts.swift */; };
 		967F8F4E23B17B650003A065 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F4D23B17B650003A065 /* ContactView.swift */; };
 		967F8F5023B24C660003A065 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F4F23B24C660003A065 /* AddContactView.swift */; };
+		967F8F5223B298C70003A065 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F5123B298C70003A065 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		967F8F4B23B178F80003A065 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		967F8F4D23B17B650003A065 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		967F8F4F23B24C660003A065 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		967F8F5123B298C70003A065 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = "../../P13 Instafilter/Instafilter/Main/ImagePicker.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				967F8F3923B138B00003A065 /* ContentView.swift */,
 				967F8F4D23B17B650003A065 /* ContactView.swift */,
 				967F8F4F23B24C660003A065 /* AddContactView.swift */,
+				967F8F5123B298C70003A065 /* ImagePicker.swift */,
 				967F8F3B23B138B20003A065 /* Assets.xcassets */,
 				967F8F4023B138B20003A065 /* LaunchScreen.storyboard */,
 				967F8F4323B138B20003A065 /* Info.plist */,
@@ -163,6 +166,7 @@
 				967F8F3623B138B00003A065 /* AppDelegate.swift in Sources */,
 				967F8F3823B138B00003A065 /* SceneDelegate.swift in Sources */,
 				967F8F3A23B138B00003A065 /* ContentView.swift in Sources */,
+				967F8F5223B298C70003A065 /* ImagePicker.swift in Sources */,
 				967F8F5023B24C660003A065 /* AddContactView.swift in Sources */,
 				967F8F4C23B178F80003A065 /* Contacts.swift in Sources */,
 			);

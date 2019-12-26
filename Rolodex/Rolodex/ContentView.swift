@@ -25,7 +25,7 @@ struct ContentView: View {
                             Text(self.contacts.items[idx].name)
                         }
                     }
-                .onDelete(perform: removeContact)
+                    .onDelete(perform: removeContact)
                 }
             }
             .navigationBarTitle("Rolodex")
