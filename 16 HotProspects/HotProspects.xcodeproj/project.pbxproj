@@ -17,6 +17,7 @@
 		967F8F7823B56A0B0003A065 /* UsingEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F7723B56A0B0003A065 /* UsingEnvironmentObject.swift */; };
 		967F8F7A23B56E110003A065 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F7923B56E110003A065 /* User.swift */; };
 		967F8F7C23B570960003A065 /* CreatingTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F8F7B23B570960003A065 /* CreatingTabs.swift */; };
+		96B1C00223B82F1F00654160 /* UsingResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B1C00123B82F1F00654160 /* UsingResultType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		967F8F7723B56A0B0003A065 /* UsingEnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingEnvironmentObject.swift; sourceTree = "<group>"; };
 		967F8F7923B56E110003A065 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		967F8F7B23B570960003A065 /* CreatingTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingTabs.swift; sourceTree = "<group>"; };
+		96B1C00123B82F1F00654160 /* UsingResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingResultType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				967F8F7723B56A0B0003A065 /* UsingEnvironmentObject.swift */,
 				967F8F7923B56E110003A065 /* User.swift */,
 				967F8F7B23B570960003A065 /* CreatingTabs.swift */,
+				96B1C00123B82F1F00654160 /* UsingResultType.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				967F8F7823B56A0B0003A065 /* UsingEnvironmentObject.swift in Sources */,
 				967F8F6223B569500003A065 /* SceneDelegate.swift in Sources */,
 				967F8F6423B569500003A065 /* ContentView.swift in Sources */,
+				96B1C00223B82F1F00654160 /* UsingResultType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
