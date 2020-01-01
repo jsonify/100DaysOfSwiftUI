@@ -16,6 +16,7 @@ struct ContentView: View {
                     NavigationLink("Reading custom values from the environment with @EnvironmentObject", destination: UsingEnvironmentObject())
                     NavigationLink("Creating tabs with TabView and tabItem()", destination: CreatingTabs())
                     NavigationLink("Understanding Swift’s Result type", destination: UsingResultType())
+                    NavigationLink("Manually publishing ObservableObject changes", destination: ManuallyPublishing())
     
                 }
                 
