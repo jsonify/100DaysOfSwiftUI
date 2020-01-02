@@ -17,6 +17,7 @@ struct ContentView: View {
                     NavigationLink("Creating tabs with TabView and tabItem()", destination: CreatingTabs())
                     NavigationLink("Understanding Swift’s Result type", destination: UsingResultType())
                     NavigationLink("Manually publishing ObservableObject changes", destination: ManuallyPublishing())
+                    NavigationLink("Controlling image interpolation in SwiftUI", destination: ControllingImageInterpolation())
     
                 }
                 
