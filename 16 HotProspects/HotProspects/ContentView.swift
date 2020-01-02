@@ -18,6 +18,7 @@ struct ContentView: View {
                     NavigationLink("Understanding Swift’s Result type", destination: UsingResultType())
                     NavigationLink("Manually publishing ObservableObject changes", destination: ManuallyPublishing())
                     NavigationLink("Controlling image interpolation in SwiftUI", destination: ControllingImageInterpolation())
+                    NavigationLink("Creating context menus", destination: ContextMenus())
     
                 }
                 
