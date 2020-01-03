@@ -20,6 +20,7 @@ struct ContentView: View {
                     NavigationLink("Controlling image interpolation in SwiftUI", destination: ControllingImageInterpolation())
                     NavigationLink("Creating context menus", destination: ContextMenus())
                     NavigationLink("Scheduling local notifications", destination: SchedulingLocalNotifications())
+                    NavigationLink("Adding Swift package dependencies in Xcode", destination: UsingSwiftPackageManager())
     
                 }
                 

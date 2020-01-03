@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9610432B23BEA79C003E50C0 /* UsingSwiftPackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610432A23BEA79C003E50C0 /* UsingSwiftPackageManager.swift */; };
 		9664D46E23BD5E8A009F8657 /* ManuallyPublishing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664D46D23BD5E8A009F8657 /* ManuallyPublishing.swift */; };
 		9664D47023BDB2EE009F8657 /* ControllingImageInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664D46F23BDB2EE009F8657 /* ControllingImageInterpolation.swift */; };
 		9664D47223BDB804009F8657 /* ContextMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664D47123BDB804009F8657 /* ContextMenus.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9610432A23BEA79C003E50C0 /* UsingSwiftPackageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingSwiftPackageManager.swift; sourceTree = "<group>"; };
 		9664D46D23BD5E8A009F8657 /* ManuallyPublishing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManuallyPublishing.swift; sourceTree = "<group>"; };
 		9664D46F23BDB2EE009F8657 /* ControllingImageInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllingImageInterpolation.swift; sourceTree = "<group>"; };
 		9664D47123BDB804009F8657 /* ContextMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenus.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				9664D46F23BDB2EE009F8657 /* ControllingImageInterpolation.swift */,
 				9664D47123BDB804009F8657 /* ContextMenus.swift */,
 				9664D49723BEA23B009F8657 /* SchedulingLocalNotifications.swift */,
+				9610432A23BEA79C003E50C0 /* UsingSwiftPackageManager.swift */,
 			);
 			path = Fundamentals;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9664D47023BDB2EE009F8657 /* ControllingImageInterpolation.swift in Sources */,
+				9610432B23BEA79C003E50C0 /* UsingSwiftPackageManager.swift in Sources */,
 				967F8F7C23B570960003A065 /* CreatingTabs.swift in Sources */,
 				967F8F7623B569E60003A065 /* Application.swift in Sources */,
 				9664D46E23BD5E8A009F8657 /* ManuallyPublishing.swift in Sources */,
