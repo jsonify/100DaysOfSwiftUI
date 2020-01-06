@@ -13,6 +13,10 @@
 		9610433F23BEF4BC003E50C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9610433E23BEF4BC003E50C0 /* Assets.xcassets */; };
 		9610434223BEF4BC003E50C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9610434123BEF4BC003E50C0 /* Preview Assets.xcassets */; };
 		9610434523BEF4BC003E50C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9610434323BEF4BC003E50C0 /* LaunchScreen.storyboard */; };
+		9610434D23BEF5DD003E50C0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610434C23BEF5DD003E50C0 /* Movie.swift */; };
+		9610434F23BEF701003E50C0 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 9610434E23BEF701003E50C0 /* movies.json */; };
+		9610435123BEF7E9003E50C0 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610435023BEF7E9003E50C0 /* MovieData.swift */; };
+		9610435323BEFBF0003E50C0 /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610435223BEFBF0003E50C0 /* MovieItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9610434123BEF4BC003E50C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9610434423BEF4BC003E50C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9610434623BEF4BC003E50C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9610434C23BEF5DD003E50C0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9610434E23BEF701003E50C0 /* movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		9610435023BEF7E9003E50C0 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		9610435223BEFBF0003E50C0 /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				9610434323BEF4BC003E50C0 /* LaunchScreen.storyboard */,
 				9610434623BEF4BC003E50C0 /* Info.plist */,
 				9610434023BEF4BC003E50C0 /* Preview Content */,
+				9610434C23BEF5DD003E50C0 /* Movie.swift */,
+				9610434E23BEF701003E50C0 /* movies.json */,
+				9610435023BEF7E9003E50C0 /* MovieData.swift */,
+				9610435223BEFBF0003E50C0 /* MovieItem.swift */,
 			);
 			path = MovieTrailer;
 			sourceTree = "<group>";
@@ -135,6 +147,7 @@
 			files = (
 				9610434523BEF4BC003E50C0 /* LaunchScreen.storyboard in Resources */,
 				9610434223BEF4BC003E50C0 /* Preview Assets.xcassets in Resources */,
+				9610434F23BEF701003E50C0 /* movies.json in Resources */,
 				9610433F23BEF4BC003E50C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +161,9 @@
 			files = (
 				9610433923BEF4B7003E50C0 /* AppDelegate.swift in Sources */,
 				9610433B23BEF4B7003E50C0 /* SceneDelegate.swift in Sources */,
+				9610434D23BEF5DD003E50C0 /* Movie.swift in Sources */,
+				9610435323BEFBF0003E50C0 /* MovieItem.swift in Sources */,
+				9610435123BEF7E9003E50C0 /* MovieData.swift in Sources */,
 				9610433D23BEF4B7003E50C0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
